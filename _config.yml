@@ -1,0 +1,44 @@
+title: Jaehyeong kim
+description: >- 
+  반갑습니다. 김재형입니다.
+url: "https://33upsiege.github.io"
+baseurl: "/33up"
+#github: ChemistryX
+email: without.whipping.cream@gmail.com
+google_analytics: "UA_TOKEN"
+
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+comments:
+  enabled: false
+  repo: "REPO_COMMENTS_PATH"
+  issue-term: pathname
+
+collections:
+  pages:
+    output: true
+  projects:
+    output: true
+  tags:
+    output: true
+
+defaults:
+  - scope:
+      type: pages
+    values:
+      layout: default
+#  - scope:
+#      type: posts
+#    values:
+#      layout: post
+#      permalink: /blog/:title
+#  - scope:
+#      type: projects
+#    values:
+#      layout: project
+#      permalink: /projects/:title
+#  - scope:
+#      type: tags
+#    values:
+#      layout: tag
+#      permalink: /tags/:title
