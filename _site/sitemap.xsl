@@ -15,11 +15,11 @@
         <div id="content">
           <h1>XML Sitemap</h1>
           <p>This is a generated
-            <a href="http://localhost:4000/33upsitemap.xml">sitemap</a>
+            <a href="http://localhost:4000sitemap.xml">sitemap</a>
             for robot, orcs or elves.
           </p>
           <p>You might to visit a
-            <a href="http://localhost:4000/33up">site</a>
+            <a href="http://localhost:4000">site</a>
             for human.
           </p>
           <xsl:if test="count(sitemap:sitemapindex/sitemap:sitemap) &gt; 0">
