@@ -1,17 +1,16 @@
-title: Hyde
-description: >-
-  Build your own portfolio <br>
-  with Hyde.
-url: "https://chemistryx.github.io"
-baseurl: "/hyde"
-github: ChemistryX
-email: changeme@chemistryx.me
+title: Jaehyeong kim
+description: >- 
+  반갑습니다. 김재형입니다.
+url: "https://33upsiege.github.io"
+baseurl: "/33up"
+#github: ChemistryX
+email: without.whipping.cream@gmail.com
 google_analytics: "UA_TOKEN"
 
 exclude: [README.md, Gemfile, Gemfile.lock]
 
 comments:
-  enabled: true
+  enabled: false
   repo: "REPO_COMMENTS_PATH"
   issue-term: pathname
 
@@ -28,18 +27,18 @@ defaults:
       type: pages
     values:
       layout: default
-  - scope:
-      type: posts
-    values:
-      layout: post
-      permalink: /blog/:title
-  - scope:
-      type: projects
-    values:
-      layout: project
-      permalink: /projects/:title
-  - scope:
-      type: tags
-    values:
-      layout: tag
-      permalink: /tags/:title
+#  - scope:
+#      type: posts
+#    values:
+#      layout: post
+#      permalink: /blog/:title
+#  - scope:
+#      type: projects
+#    values:
+#      layout: project
+#      permalink: /projects/:title
+#  - scope:
+#      type: tags
+#    values:
+#      layout: tag
+#      permalink: /tags/:title
