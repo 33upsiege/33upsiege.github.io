@@ -7,10 +7,20 @@ visible: true
 
 <div class="hyde content about">
   <h2>김재형 <small class="hyde name">FRONTEND DEVELOPER</small></h2>
-  <p>안녕하세요. 저는 김재형입니다.</p>
-  <p>현재 5년차 웹 프론트엔드 엔지니어로서 일 하고 있으며 사용자가 사용하기 편한 인터페이스 구현과, 데이터핸들링, 시각화 하는것을 좋아합니다.</p>
-  <p>각 팀들과의 협업을 중요시여기며 함께 일 하는것을 중요하다고 생각합니다.</p>
-  <span>계획된 업무들을 효율적으로 진행하고 원하는 결과물을 도출 해냈을때 가장 보람을 느낍니다.</span>
+  <p>
+    안녕하십니까, 7년 차 웹 프론트엔드 엔지니어 김재형입니다.
+  </p>
+  <p>
+    대규모 트래픽 환경과 플랫폼 서비스에서 사용자 인터페이스 설계, 상태 관리 전략 수립,
+    실시간 데이터 처리 및 시각화 기능 구현을 중심으로 개발해왔습니다.
+  </p>
+  <p>
+    서비스 특성에 맞는 구조를 고민하고, 장기적인 안정성과 확장성을 고려한 설계를 지향합니다.
+  </p>
+  <p>
+    요구사항이 명확하지 않은 상황에서도 원활한 커뮤니케이션을 통해 구조를 정리하고
+    빠르게 실행하는 것을 강점으로 가지고 있습니다.
+  </p>
   <h2>⚒️ Skills</h2>
   <div class="hyde tags skills">
     <a class="hyde tag">TypeScript</a>
@@ -54,6 +64,63 @@ visible: true
   </div>
 
   <h2>📖 Work Experience</h2>
+  <!--  넥슨유니버스 -->
+  <div class="hyde career-wrapper">
+    <div class="hyde career divider">
+      <div class="hyde career-place">주식회사 넥슨유니버스</div>
+      <div class="hyde career-desc">
+        <p class="hyde career-role">웹 프론트엔드 엔지니어 / 계약직</p>
+        <p class="hyde career-duration">2024.07 ~ 현재</p>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+<!--        <span class="title">플랫폼 공식 페이지 및 게임 실행 페이지 개발</span>-->
+
+        <div class="desc">
+          <strong>'MapleStory Universe'는 메이플스토리 IP와 블록체인 기술을 결합해,
+            게임 자산의 소유권을 유저에게 이전하는 Web3 기반 게임 생태계 플랫폼입니다.</strong>
+        </div>
+        <div class="desc">
+          <p><strong>Description</strong></p>
+          <span>
+
+        </span>
+        </div>
+
+        <!-- 이미지 영역 -->
+        <div class="desc">
+          <div class="img-box">
+            <div class="image-container">
+              <img src="/assets/img/uv_01.jpg" alt="소개이미지_1">
+            </div>
+            <div class="image-container">
+              <img src="/assets/img/uv_02.png" alt="소개이미지_2">
+            </div>
+            <div class="image-container">
+              <img src="/assets/img/uv_03.png" alt="소개이미지_3">
+            </div>
+          </div>
+        </div>
+
+        <div class="desc">
+          <div>
+            <p><strong>Work</strong></p>
+          </div>
+          <ul>
+            <li>SSR 기반 공식 페이지 및 게임 실행 페이지 구현</li>
+            <li>SWR 기반 서버 상태 캐싱 및 로컬 상태 분리 설계</li>
+            <li>백오피스(CMS) 연동 동적 콘텐츠 시스템 구축</li>
+            <li>이모티콘 반응 시스템 및 디바운스 적용</li>
+            <li>NXPC 시세 Polling 기반 실시간 반영 구조 설계</li>
+            <li>인터랙션 중심 UI(애니메이션, 페럴랙스 등) 구현</li>
+            <li>정적 리소스 분리 및 캐싱 전략 적용</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 <!--  솔드아웃 -->
   <div class="hyde career-wrapper">
     <div class="hyde career divider">
@@ -506,16 +573,13 @@ visible: true
       padding-top: 50px;
     }
   }
-
   .img-box {
     display: flex;
-    img {
-      width: 100%;
-    }
+    flex-wrap: wrap;
   }
+
   .image-container {
-    /*width: 33.33%;*/
-    float: left;
+    width: 33.33%;
     box-sizing: border-box;
     padding: 5px;
   }
@@ -524,5 +588,6 @@ visible: true
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 6px;
   }
 </style>
