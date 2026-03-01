@@ -102,12 +102,13 @@
     실시간 데이터 처리 및 시각화 기능 구현을 중심으로 개발해왔습니다.
   </p>
   <p>
-    서비스 특성에 맞는 구조를 고민하고, 장기적인 안정성과 확장성을 고려한 설계를 지향합니다.
+    서비스 특성에 맞는 구조를 고민하고 이후 서비스 안정성과 추후 확장성을 고려하는 개발 방식을 지향합니다.
   </p>
   <p>
-    요구사항이 명확하지 않은 상황에서도 원활한 커뮤니케이션을 통해 구조를 정리하고
+    요구사항이 명확하지 않은 상황에서도 커뮤니케이션을 통하여 구조를 정리하고
     빠르게 실행하는 것을 강점으로 가지고 있습니다.
   </p>
+
   <h2>⚒️ Skills</h2>
   <div class="hyde tags skills">
     <a class="hyde tag">TypeScript</a>
@@ -151,28 +152,23 @@
   </div>
 
   <h2>📖 Work Experience</h2>
-  <!--  넥슨유니버스 -->
+
+  <!-- 넥슨유니버스 -->
   <div class="hyde career-wrapper">
     <div class="hyde career divider">
       <div class="hyde career-place">주식회사 넥슨유니버스</div>
       <div class="hyde career-desc">
-        <p class="hyde career-role">웹 프론트엔드 엔지니어 / 팀원</p>
-        <p class="hyde career-duration">2024.07 ~ 현재</p>
+        <p class="hyde career-role">웹 프론트엔드 엔지니어 / 팀원 </p>
+        <p class="hyde career-duration">2024.07 ~ 현재 (1년 8개월)</p>
       </div>
     </div>
 
     <div class="hyde career">
-      <div class="">
-<!--        <span class="title">플랫폼 공식 페이지 및 게임 실행 페이지 개발</span>-->
+      <div>
         <div class="desc">
-          <strong>'MapleStory Universe'는 메이플스토리 IP와 블록체인 기술을 결합해,
+          <strong><a href="https://msu.io/maplestoryn">MapleStory Universe</a>는 메이플스토리 IP와 블록체인 기술을 결합해,
             게임 자산의 소유권을 유저에게 이전하는 Web3 기반 게임 생태계 플랫폼입니다.</strong>
         </div>
-<!--        <div class="desc">-->
-<!--          <p><strong>Description</strong></p>-->
-<!--        </div>-->
-
-        <!-- 이미지 영역 -->
         <div class="desc">
           <div class="img-box">
             <div class="image-container">
@@ -186,37 +182,224 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">Claude Code CLI 및 ChatGPT를 병행 활용한 개발 워크플로우 구축</span>
+        <small class="date">2025.11 - 2026.02</small>
         <div class="desc">
-          <div>
-            <p><strong>Work</strong></p>
-          </div>
+          <div><p><strong>Work</strong></p></div>
           <ul>
-            <li>SSR 기반 공식 페이지 및 게임 실행 페이지 구현</li>
-            <li>SWR 기반 서버 상태 캐싱 및 로컬 상태 분리 설계</li>
-            <li>백오피스(CMS) 연동 동적 콘텐츠 시스템 구축</li>
-            <li>이모티콘 반응 시스템 및 디바운스 적용</li>
-            <li>NXPC 시세 Polling 기반 실시간 반영 구조 설계</li>
-            <li>인터랙션 중심 UI(애니메이션, 페럴랙스 등) 구현</li>
+            <li>Claude Code CLI와 ChatGPT를 병행 사용하여 코드 개선안 도출 및 비교 검증</li>
+            <li>반복 작업 자동화 및 리팩토링 보조 활용으로 개발 생산성 향상</li>
+            <li>설계 초안 생성 후 비판적으로 재검토하는 방식으로 품질 관리</li>
+            <li>AI 도구를 단순 코드 생성이 아닌, 설계 보조 및 문제 해결 도구로 활용</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">라이브 서비스 추가 기능 개발, 고도화, 유지보수</span>
+        <small class="date">2025.08 - 2026.02</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>
+              백오피스(CMS) 연동 기반 동적 콘텐츠 시스템 구현
+              <ul>
+                <li>약관, 배너, 공지사항 등 운영 콘텐츠를 백오피스와 연동하여 동적 렌더링 구조 설계</li>
+                <li>노출 기간, 상태값, 위치 조건 등에 따른 분기 로직 구현</li>
+                <li>예외 처리 및 데이터 누락 상황 대응 로직 설계</li>
+              </ul>
+            </li>
+            <li>
+              게시판 기능 고도화
+              <ul>
+                <li>게시글 이모티콘 반응 시스템</li>
+                <li>SWR 기반 서버 상태 캐싱 및 반응 상태 동기화</li>
+                <li>기능 API 호출 디바운스 및 요청 최소화 전략 적용</li>
+              </ul>
+            </li>
+            <li>
+              NXPC 시세 실시간 반영 구조 설계
+              <ul>
+                <li>SSE 도입을 검토했으나 백엔드 리소스 제약으로 Polling 방식 채택</li>
+                <li>Polling 주기 및 조건부 요청 전략 설계로 서버 부하 최소화</li>
+                <li>서버 상태 캐싱을 통한 불필요한 재요청 방지</li>
+              </ul>
+            </li>
+            <li>
+              인터랙션 중심 UI(플랫폼 기능레이어) 개발
+              <ul>
+                <li>페럴랙스 스크롤, 애니메이션, 이펙트 등 인터랙션 기능 구현</li>
+                <li>렌더링 비용 최소화를 고려한 구조 설계</li>
+                <li>정적 리소스 분리 및 캐싱 전략 적용</li>
+              </ul>
+            </li>
+            <li>
+              차트 시스템 고도화
+              <ul>
+                <li>트레이딩 차트 라이브러리 적용 및 커스터마이징</li>
+                <li>차트 모듈을 Git Submodule로 분리하여 재사용 구조 설계</li>
+                <li>데이터 바인딩 및 상태 동기화 로직 구현</li>
+              </ul>
+            </li>
+            <li>
+              GitLab 기반 CI/CD 환경에서 MR 중심 개발 프로세스 운영
+              <ul>
+                <li>Merge Request 리뷰 및 승인 후 Commit ID를 Rundeck에 적용하여 배포 수행</li>
+                <li>배포 이력 관리 및 운영 이슈 대응</li>
+              </ul>
+            </li>
+            <li>
+              공통 패키지 및 아키텍처
+              <ul>
+                <li>팀 공통 UI 및 기능 컴포넌트 패키지 개발</li>
+                <li>BFF 기반 RESTful API 연동 구조 설계</li>
+                <li>서버 상태는 SWR로 관리하고, 로컬 상태는 컴포넌트 단위로 분리하여 복잡도 최소화</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">아이템 강화 서비스(스타캐치) 미니게임 웹 구현</span>
+        <small class="date">2025.06 - 2025.07</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>오브젝트가 좌우로 이동하는 인터랙션 구현(애니메이션/입력 처리)</li>
+            <li>중앙 판정 영역 기준 성공/실패 판정 로직 구현 (지정 영역 진입 시 성공, 이탈 시 실패)</li>
+            <li>판정 결과에 따른 UI 상태 전환 및 강화 단계별 상태 관리</li>
+          </ul>
+        </div>
+        <div class="desc">
+          <div class="img-box">
+            <div class="image-container">
+              <img src="/assets/img/smithy_2.png" alt="search_console_img_1">
+            </div>
+            <div class="image-container">
+              <img src="/assets/img/modal_5.png" alt="search_console_img_2">
+            </div>
+            <div class="image-container">
+              <img src="/assets/img/starcatch_1.png" alt="search_console_img_2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">런칭 이벤트 페이지 및 사전예약, 경험치쿠폰 등 유저 페이지 개발</span>
+        <small class="date">2025.03 - 2025.05</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>브라우저 기반 사전예약 및 보상(경험치 쿠폰 등) 페이지 개발</li>
+            <li>대규모 트래픽 유입을 고려한 구조 설계</li>
+            <li>SWR 기반 캐싱 전략 적용으로 서버 상태 관리</li>
             <li>정적 리소스 분리 및 캐싱 전략 적용</li>
+            <li>API 호출 디바운스 적용으로 네트워크 요청 최소화</li>
+            <li>예외 처리 및 사용자 피드백 로직 구현</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">메이플스토리 유니버스 프로덕션 페이지(게임실행) 개발</span>
+        <small class="date">2025.01 - 2025.02</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>MapleStory IP 기반 블록체인/NFT 생태계 공식 웹페이지 개발 및 유지보수</li>
+            <li>TypeScript, React(Next.js), module.scss 기반 개발</li>
+            <li>SSR 구조 내에서 공식 페이지 및 게임 실행 페이지 구현 및 유지보수 담당</li>
+            <li>서버 사이드 렌더링 기반 SEO 및 초기 로딩 최적화</li>
+            <li>Web3 지갑 연동 - 사내 공통 패키지로 제공되는 MetaMask SDK를 활용하여 지갑 연결 기능 구현</li>
+            <li>연결/해제 상태에 따른 UI 분기 처리 및 예외 케이스 대응</li>
+            <li>Figma, Axure RP 기반 협업 및 요구사항 반영</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">D3.js 기반 인게임 아이템 강화 차트 구현</span>
+        <small class="date">2024.11 - 2024.12</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>게임 내 유저들이 각종 아이템을 강화하고 사용된 재화를 시각화하는 기능 개발</li>
+            <li>강화 시도 횟수 및 사용 재화 데이터 시각화</li>
+            <li>D3.js 기반 Line / Bar 차트 구현</li>
+            <li>Zoom In/Out 인터랙션 기능 구현</li>
+            <li>필터 기능 제공으로 사용자 편의성 향상</li>
+            <li>데이터 바인딩 및 상태 반영 로직 설계</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">2차 클로즈베타 사전 예약 페이지 개발</span>
+        <small class="date">2024.10 - 2024.11</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>10만 유저 모집을 목표로 한 사전예약 이벤트 페이지 개발</li>
+            <li>마우스 이벤트 기반 애니메이션 및 인터랙션 구현</li>
+            <li>동적 UI 전환 및 시각 효과 적용</li>
+            <li>React Hooks 기반 입력 검증 및 예외 처리</li>
+            <li>불필요한 리렌더링 최소화 구조 설계</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">SSR, CSR 기반의 1차 클로즈베타 랭킹 페이지 개발</span>
+        <small class="date">2024.07 - 2024.09</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>베타 기간 수집된 유저 데이터 기반 랭킹 및 검색 페이지 개발</li>
+            <li>Next.js SSR/CSR 혼합 구조 설계 (서버 사이드 데이터 렌더링 및 클라이언트 인터랙션 분리)</li>
+            <li>반응형 웹페이지 구현</li>
+            <li>vanilla-extract 기반 스타일 작성</li>
+            <li>유저 랭킹, 사용 재화, 강화 랭킹 게시판 개발 및 검색/정렬 기능 구현</li>
+            <li>사내 공용 라이브러리 확장 및 Nexus 기반 배포</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-<!--  솔드아웃 -->
+
+  <!-- 솔드아웃 (무신사 soldout) -->
   <div class="hyde career-wrapper">
     <div class="hyde career divider">
-      <div class="hyde career-place">(주)에스엘디티</div>
+      <div class="hyde career-place">(주)에스엘디티 · 무신사 soldout</div>
       <div class="hyde career-desc">
-        <p class="hyde career-role">프론트개발팀 / 팀원 / (2년 7개월)</p>
+        <p class="hyde career-role">프론트개발팀 / 팀원 / (2년 9개월)</p>
         <p class="hyde career-duration">2021.09 ~ 2024.05</p>
       </div>
     </div>
 
-    <div class="hyde career" style="display: table-column">
+    <div class="hyde career" style="flex-direction: column;">
       <div class="desc">
-        <strong>"Soldout"은 한정판 상품의 정가품 여부, 하자 및 퀄리티 등을 검수하고 거래하는 리셀 플랫 폼입니다.</strong>
+        <strong>"Soldout"은 한정판 상품의 정가품 여부, 하자 및 퀄리티 등을 검수하고 거래하는 리셀 플랫폼입니다.</strong>
       </div>
       <div class="desc">
         <div class="img-box">
@@ -231,77 +414,99 @@
           </div>
         </div>
       </div>
+      <div class="desc">
         <ul>
-          <li>SSR 및 SPA 기반의 하이브리드 모바일앱,웹,모바일웹,관리자페이지를 개발</li>
-          <li>운영중인 서비스의 피드백 확인과 추가개발 및 유지보수를 진행하고 있습니다.</li>
-          <li>상품, 이벤트, 포인트, 웹에디터, 이미지편집기 등 전반적인 Admin 서비스를 개발 및 유지보수 하고 있습니다.</li>
+          <li>한정판 상품 정가품 검수 기반 리셀 플랫폼 FE 개발</li>
+          <li>SSR 및 SPA 기반 하이브리드 모바일 앱, 웹, 모바일 웹, 관리자 페이지 개발</li>
+          <li>Git, Jira, Figma 기반 협업</li>
+          <li>운영 서비스 피드백 반영, 오류 수정 및 유지보수 수행</li>
         </ul>
       </div>
+    </div>
 
     <div class="hyde career">
       <div class="pt50">
-        <span class="title">SEO 개발</span>
-        <small class="date">2023.08 ~ 2023.10</small>
+        <span class="title">Vue2 → React18 마이그레이션</span>
+        <small class="date">2023.11 - 2024.01</small>
         <div class="desc">
-          <p><strong>Description</strong></p>
-          <span>검색엔진최적화 작업을 단독 진행하였습니다. 모바일웹, PC 페이지 등에서 검색엔진이 자료를 수집하고 검색결과 선순위에
-        노출 될 수있도록 작업을 하였습니다.</span>
-        </div>
-        <div class="desc">
-          <div>
-            <p><strong>Work</strong></p>
-          </div>
+          <div><p><strong>Work</strong></p></div>
           <ul>
-            <li>Google,Naver 컨벤션에 맞춰 검색에 노출 될 수 있도록 코드 수정</li>
-            <li>Google, Naver 검색 엔진에 수집되도록 sitemap.xml 개발</li>
-            <li>nuxt 서버 미들웨어에서 XML 파일자동생성 로직 개발,구글검색콘솔 접근시 자동업데이트 기능 구현</li>
-            <li>xmlbuilder2 라이브러리를 사용하여 개발</li>
+            <li>결제 및 상품 상세 페이지를 포함한 주요 컴포넌트 마이그레이션 (3인 협업)</li>
+            <li>Vue 2 → React 18 전환을 통한 성능, 유지보수성, 확장성 개선</li>
+            <li>Zustand 기반 전역 상태 관리 구조 설계</li>
+            <li>Emotion 기반 스타일링 적용</li>
+            <li>React Query 기반 데이터 페칭 구조 설계</li>
+            <li>React Hook Form 기반 폼 상태 관리 및 검증 구현</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">SEO 개발 (단독 진행)</span>
+        <small class="date">2023.08 - 2023.09</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>모바일 웹 및 PC 페이지 검색엔진 최적화 작업 수행</li>
+            <li>검색엔진 봇 컨벤션에 맞춰 기존 코드 구조 개선</li>
+            <li>Google, Naver 검색 엔진에 수집되도록 sitemap.xml 개발 및 수집 최적화</li>
+            <li>Nuxt 서버 미들웨어 기반 XML 자동 생성 로직 구현 (xmlbuilder2 라이브러리 활용)</li>
+            <li>Google Search Console 접근 시 자동 업데이트 구현</li>
           </ul>
           <ul>
             <li>
               이슈
               <ul>
-                <li>
-                  대량의 데이터를 처리하는 과정에서 브라우저가 중단되는 문제
-                </li>
+                <li>대량의 데이터를 처리하는 과정에서 브라우저가 중단되는 문제</li>
               </ul>
             </li>
             <li>
               해결
               <ul>
-                <li>
-                  호출 부분에 있어 async/await를 사용하여 데이터를 작은 단위로 나누어 처리하고, 각각의
-                  데이터를 순차적으로 처리하였습니다.<br>이를 통해 한번에 처리할 수 있는 양을 줄이고 브라우저가
-                  중단되는것을 방지, 중단되었을시 재호출 할 수 있도록 처리하였습니다.
-                </li>
+                <li>async/await 기반 비동기 처리로 데이터 분할 처리</li>
+                <li>순차 처리 구조 설계로 브라우저 중단 방지</li>
+                <li>중단 시 재호출 가능하도록 복구 로직 구현</li>
               </ul>
             </li>
           </ul>
           <div class="desc">
             <div class="img-box">
               <div class="image-container">
-                <img src="/assets/img/web_searchConsole.png"  alt="search_console_img_1">
+                <img src="/assets/img/web_searchConsole.png" alt="search_console_img_1">
               </div>
               <div class="image-container">
-                <img src="/assets/img/mobile_searchConsole.png"  alt="search_console_img_2">
+                <img src="/assets/img/mobile_searchConsole.png" alt="search_console_img_2">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="hyde career">
       <div class="pt50">
-        <span class="title">결제 페이지 개발 및 연동</span>
-        <small class="date">2022.11 ~ 2022.12</small>
+        <span class="title">쿠폰 관리 서비스</span>
+        <small class="date">2023.04 - 2023.05</small>
         <div class="desc">
-          <p><strong>Description</strong></p>
-          <span>kcp 결제 서비스 외 현대카드사(레드바우처)의 전용 결제 기능을 추가 하였습니다. 프론트엔드 부분은 혼자 맡아 진행하였으며 QA를 거쳐 실 서비스에 배포 되었습니다.</span>
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>관리자 쿠폰 발급 페이지 개발</li>
+            <li>Vuex 기반 상태 동기화 및 페이지 데이터 관리</li>
+            <li>쿠폰 적용 기간 및 예외 처리 로직 구현</li>
+            <li>웹과 앱 간 쿠폰 기능 동기화 구조 설계</li>
+          </ul>
         </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">결제 시스템 개발 및 연동</span>
+        <small class="date">2022.10 - 2022.11</small>
         <div class="desc">
-          <div>
-            <p><strong>Work</strong></p>
-          </div>
+          <div><p><strong>Work</strong></p></div>
           <div class="img-box">
             <div class="image-container">
               <img src="/assets/img/hyundai_1.png" alt="hyundai_1">
@@ -314,83 +519,70 @@
             </div>
           </div>
           <ul>
-            <li>백엔드와 협업하여 연동된 api를 활용한 결제페이지 개발 및 유지보수</li>
+            <li>기존 KCP 결제 외 현대카드(레드바우처) 결제 기능 추가 (FE 단독 담당)</li>
+            <li>현대카드 API 연동 결제 페이지 개발</li>
+            <li>QA 후 실서비스 배포</li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="hyde career">
       <div class="pt50">
         <span class="title">Legacy 페이지 마이그레이션 및 물류 관리 기능 개발</span>
-        <small class="date">2022.08 ~ 2022.11</small>
+        <small class="date">2022.07 - 2022.09</small>
         <div class="desc">
-          <p><strong>Description</strong></p>
-          <span>기존에 php Laravel로 개발된 페이지들을 next.js로 마이그레이션 하는 작업이었으며 기존 에 하드코 딩 되어있던 데이터를 Api 연동하여 마이그레이션 작업 하였습니다.</span>
-        </div>
-        <div class="desc">
-          <div>
-            <p><strong>Work</strong></p>
-          </div>
+          <div><p><strong>Work</strong></p></div>
           <ul>
-            <li>앱에서 보여주는 공지, 안내사항, 약관페이지 마이그레이션 및 통합앱에서 보여주는 공지, 안내사항, 약관페이지 마이그레이션 및 통합</li>
-            <li>Ag-grid, ApexChart를 사용하여 수치를 시각화 하여 표현</li>
+            <li>PHP Laravel 기반 레거시 페이지 → Nuxt.js 마이그레이션</li>
+            <li>하드코딩 데이터 제거 및 API 연동 구조 전환</li>
+            <li>공지, 안내사항, 약관 페이지 통합 및 마이그레이션</li>
+            <li>Ag-Grid, ApexChart를 활용한 수치 데이터 시각화</li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="hyde career">
       <div class="pt50">
-        <span class="title">admin 대시보드</span>
-        <small class="date">2022.06 ~ 2022.07</small>
+        <span class="title">Soldout admin 현황판 개발</span>
+        <small class="date">2022.05 - 2022.07</small>
         <div class="desc">
-          <p><strong>Description</strong></p>
-          <span>거래현황, 검수현황, 포인트금액 등을 실시간으로 모니터링 할 수 있게 개발된 대시보드 현황판 입니다.</span>
-        </div>
-        <div class="desc">
-          <div>
-            <p><strong>Work</strong></p>
-          </div>
+          <div><p><strong>Work</strong></p></div>
           <ul>
-            <li>차트 라이브러리를 사용하여 ​숫자로 된 데이터를 시각화</li>
-            <li>'Polling' 방식을 사용하여 주기적으로 데이터를 업데이트 하고 동기화 기능 구현</li>
+            <li>거래 현황, 검수 현황, 포인트 금액 모니터링 대시보드 개발</li>
+            <li>차트 라이브러리 활용 데이터 시각화</li>
+            <li>Polling 기반 실시간 데이터 업데이트 및 동기화 구현</li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="hyde career">
       <div class="pt50">
-        <span class="title">제품 검수 애플리케이션 개발 (Android)</span>
+        <span class="title">제품 검수 애플리케이션 개발 (Android Web App)</span>
         <small class="date">2022.03 - 2022.04</small>
         <div class="desc">
-          <p><strong>Description</strong></p>
-          <span>사내 검수팀을 위한 안드로이드 앱으로서 기기 하나에서 검수 프로세스를 통합, 일원화 하기위해 개발 한 기능입니다.</span>
-        </div>
-        <div class="desc">
-          <div>
-            <p><strong>Work</strong></p>
-          </div>
+          <div><p><strong>Work</strong></p></div>
           <ul>
-            <li>Android apk 웹앱으로 개발 하였으며 실시간 검수 현황 대시보드, WebRTC를 이용하여 바코드 및 QR 코드 인식 기능 개발</li>
+            <li>사내 검수팀용 Android APK 기반 웹앱 개발</li>
+            <li>실시간 검수 현황 대시보드 구현</li>
+            <li>WebRTC를 이용한 바코드 및 QR 코드 인식 기능 개발</li>
           </ul>
           <ul>
             <li>
               이슈
               <ul>
                 <li>
-                  WebRTC(getUserMedia)를 사용하는데에 있어 갤럭시 휴대폰의 전,후면 4개의 카메라중
-                  광각 카메라가 기본으로 잡히는 문제가 발생하였습니다. 단 외부 카메라를 사용한다면 렌즈가 1개이기에 문제가 발생하지 않았습니다.
+                  WebRTC(getUserMedia) 사용 시 갤럭시 기기에서 광각 카메라가 기본 선택되는 문제
                 </li>
               </ul>
             </li>
             <li>
               해결
               <ul>
-                <li>
-                  enumerateDevices method를 사용하여 기기 ID를 제공받아 기본값으로 설정 하였습니다.
-                </li>
-                <li>
-                  카메라 목록을 method로 전달받아 사용자가 직접 선택 할 수있는 선택지를 제공 하였습니다.
-                </li>
+                <li>enumerateDevices() 활용 기기 ID 기반 기본 카메라 설정</li>
+                <li>카메라 선택 UI 제공으로 사용자 선택 가능하도록 개선</li>
               </ul>
             </li>
           </ul>
@@ -416,43 +608,33 @@
               <img src="/assets/img/confirm_barcode.jpeg" alt="Image 3">
             </div>
           </div>
-
         </div>
       </div>
     </div>
+
     <div class="hyde career">
       <div class="pt50">
-        <span class="title">Web 서비스 개발</span>
+        <span class="title">Soldout Web 서비스 구축</span>
         <small class="date">2022.01 - 2022.03</small>
         <div class="desc">
-          <p><strong>Description</strong></p>
-          <span>'Soldout'은 APP 에서만 서비스를 제공하고 있었지만 Web 서비스를 제공하기 위해 제작한 페이지입니다.<br>
-            앱과 동일한 기능, 사용자에게 익숙한 UX를 최대한 Web 페이지에 구현하였습니다.</span>
-        </div>
-        <div class="desc">
-          <div>
-            <p><strong>Work</strong></p>
-          </div>
+          <div><p><strong>Work</strong></p></div>
           <ul>
-            <li>Vue composition api를 사용해서 디렉토리 구조를 설계하고 vuex, storage 를 각기 사용하여 데이터 관리를 했습니다.</li>
-            <li>Soldout 웹 페이지 초기 구죽, 구조 설계 및 개발</li>
-            <li>초기 메인, 상품상세, 마이페이지, 결제페이지 등 개발</li>
+            <li>앱 전용 서비스 → 웹 서비스 확장 개발</li>
+            <li>초기 구조 설계 및 핵심 페이지(메인, 상품 상세, 마이페이지, 결제 페이지) 구현</li>
+            <li>Vue composition api를 사용해서 디렉토리 구조를 설계하고 vuex, storage를 각기 사용하여 데이터 관리</li>
           </ul>
           <ul>
             <li>
               이슈
               <ul>
-                <li>
-                  새로고침, 결제오류로 인한 페이지 reload 상황에서 store가 초기화 되어 유저가 설정한 filter, 결제정보가 초기화 되는 이슈 발생
-                </li>
+                <li>새로고침 및 결제 오류로 인한 페이지 reload 시 store 초기화 문제 발생</li>
               </ul>
             </li>
             <li>
               해결
               <ul>
-                <li>
-                  sessionStorage를 통해 기존 데이터를 관리하고 해당 페이지를 벗어날시 clear 하는 로직 개발
-                </li>
+                <li>sessionStorage 기반 상태 유지 로직 구현</li>
+                <li>페이지 이탈 시 clear 처리 구조 설계</li>
               </ul>
             </li>
           </ul>
@@ -467,13 +649,13 @@
               <img src="/assets/img/web3_.png" alt="Image 3">
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </div>
-  <!--  루나소프트 -->
-  <div class="hyde career-wrapper" style="padding-top: 100px;">
+
+  <!-- 루나소프트 -->
+  <div class="hyde career-wrapper pt100">
     <div class="hyde career divider">
       <div class="hyde career-place">(주)루나소프트</div>
       <div class="hyde career-desc">
@@ -487,98 +669,149 @@
         <span class="title">Showa.kr 소개 페이지 개발</span>
         <small class="date">2021.02 - 2021.03</small>
         <div class="desc">
-          <p><strong>Description</strong></p>
-          <span>소개 페이지 및 OS별 다운로드 Deeplink를 활용한 페이지 입니다. Angular 10을 사용하여 개발 하였고, Gitlab을 이용해 자동화(CI/CD) 하였습니다.</span>
-        </div>
-        <div class="desc">
-          <div>
-            <p><strong>Work</strong></p>
-          </div>
+          <div><p><strong>Work</strong></p></div>
           <ul>
-            <li>Angular 10, RxJS, HTML5, CSS를 사용한 개발</li>
-            <li>Showa의 런칭을 앞두고 외부 소개 페이지인 Showa.kr을 Angular 10을 적용하여 개발</li>
-            <li>공지사항의 CRUD 기능 구현 및 Showa 백오피스 admin 페이지에서 등록, 수정, 삭제 가능</li>
-            <li>iOS 및 Android에서 연결되는 DeepLink 개발로, 사용자가 클릭 시 앱이 바로실행되어 특정 화면으로 이동할 수 있도록 구현</li>
+            <li>Showa 런칭을 위한 외부 소개 페이지 개발 (Angular 10)</li>
+            <li>Angular 10, RxJS, HTML5, CSS 기반 구현</li>
+            <li>공지사항 CRUD 기능 개발 (Showa 백오피스 Admin 페이지와 연동, 등록/수정/삭제 구현)</li>
+            <li>iOS 및 Android에서 연결되는 DeepLink 개발 (사용자 클릭 시 앱 실행 및 특정 화면 이동 구현)</li>
+            <li>Gitlab을 이용한 자동화(CI/CD)</li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="hyde career">
-      <div>
-        <span class="title">Showa.kr 소개 페이지 개발</span>
-        <small class="date">2021.02 - 2021.03</small>
-        <div class="desc">
-          <p><strong>Description</strong></p>
-          <span>소개 페이지 및 OS별 다운로드 Deeplink를 활용한 페이지 입니다. Angular 10을 사용하여 개발 하였고, Gitlab을 이용해 자동화(CI/CD) 하였습니다.</span>
-        </div>
-        <div class="desc">
-          <div>
-            <p><strong>Work</strong></p>
-          </div>
-          <ul>
-            <li>Angular 10, RxJS, HTML5, CSS를 사용한 개발</li>
-            <li>Showa의 런칭을 앞두고 외부 소개 페이지인 Showa.kr을 Angular 10을 적용하여 개발</li>
-            <li>공지사항의 CRUD 기능 구현 및 Showa 백오피스 admin 페이지에서 등록, 수정, 삭제 가능</li>
-            <li>iOS 및 Android에서 연결되는 DeepLink 개발로, 사용자가 클릭 시 앱이 바로실행되어 특정 화면으로 이동할 수 있도록 구현</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="hyde career">
-      <div>
-        <span class="title">Showa admin 플랫폼 개발</span>
+      <div class="pt50">
+        <span class="title">Showa 백오피스 admin 플랫폼 개발</span>
         <small class="date">2020.10 - 2021.08</small>
         <div class="desc">
-          <p><strong>Description</strong></p>
-          <span>쇼아는 패션 애플리케이션이자 온라인 쇼핑몰로서 하나의 APP에서 소비자가 원하는 브랜드를 찾아 검색, 결제 플랫폼으로 연동되는 서비스입니다. </span>
-        </div>
-        <div class="desc">
-          <div>
-            <p><strong>Work</strong></p>
-          </div>
+          <div><p><strong>Work</strong></p></div>
           <ul>
-            <li>Angular 10 및 TypeScript, ES5+를 사용하여 개발</li>
-            <li>Docker 기반 컨테이너로 구축되며 Rancher를 통한 자동화 배포</li>
-            <li>RxJS(NgRx)의 store를 이용한 상태관리 및 각 페이지마다의 별도 module을 통한 리소스 관리,공통 component인 캘린더, 이미지 업로드 등을 shared module로 분리하여 재사용성을 높임</li>
-            <li>주 기능으로는 앱에 보여지는 MD들의 상품 CRUD 및 공지사항 상품, 카테고리 매칭 기능 등이 있음 엑 셀 업/다운로드 기능과 함께 웹페이지 내에서 해당 상품을 drag&drop하여 사용자에게 편안한 환경 제공 에 연구하고 개발함</li>
+            <li>Angular 10, TypeScript 기반 백오피스 플랫폼 설계 및 개발</li>
+            <li>Docker 기반 컨테이너 구성 및 Rancher를 통한 자동화 배포 환경 구축</li>
+            <li>RxJS(NgRx Store) 기반 상태 관리, 페이지별 별도 Module 분리로 리소스 관리</li>
+            <li>공통 컴포넌트(캘린더, 이미지 업로드 등)를 Shared Module로 분리하여 재사용성 향상</li>
+            <li>MD 상품 CRUD, 공지사항-카테고리 매칭 기능, Excel 업/다운로드, Drag & Drop 기반 상품 정렬 기능 개발</li>
           </ul>
-        </div>
-      </div>
-    </div>
-    <!--    씨티아이랩 -->
-    <div class="hyde career-wrapper" style="padding-top: 100px;">
-      <div class="hyde career divider">
-        <div class="hyde career-place">(주)씨티아이랩</div>
-        <div class="hyde career-desc">
-          <p class="hyde career-role">딜리버리팀 / 연구원 / (1년)</p>
-          <p class="hyde career-duration">2019.04 ~ 2020.10</p>
-        </div>
-      </div>
-
-      <div class="hyde career">
-        <div>
-          <div class="desc">
-            <p><strong>Description</strong></p>
-            <span>자동 생성/적용한 AI 모델 변수로 사이버 위협을 탐지 후 위협에 대한 속성별 자동 분류하는 플랫폼입니다.</span>
-          </div>
-          <div class="desc">
-            <div>
-              <p><strong>Work</strong></p>
-            </div>
-            <ul>
-              <li>Angular 6로 개발된 기존 플랫폼을 Angular 9로 재구축</li>
-              <li>i18n 다국어 적용 작업</li>
-              <li>'Leaflet'을 이용하여 국가별 공격 정보를 시각화</li>
-              <li>한국산업기술시험원 GS인증 보안 시스템 개발</li>
-              <li>Polling 방식을 이용한 데이터 모니터링 현황판(대시보드) 개발</li>
-              <li>HighChart, vis.js 를 이용하여 AI 데이터 현황 구현,시각화 기능 개발 및 위젯, 대시보드의 기능을 각 컴포넌트로 모듈화</li>
-              <li>WebSocket을 통한 플랫폼 내부 공유 기능 개발, Socket.io Client를 사용하고, html2Canvas를 이용한 화면 캡처 기능 개발</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- 씨티아이랩 -->
+  <div class="hyde career-wrapper pt100">
+    <div class="hyde career divider">
+      <div class="hyde career-place">(주)씨티아이랩</div>
+      <div class="hyde career-desc">
+        <p class="hyde career-role">딜리버리팀 / 연구원 / (1년 7개월)</p>
+        <p class="hyde career-duration">2019.04 ~ 2020.10</p>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div>
+        <div class="desc">
+          <strong>자동 생성/적용한 AI 모델 변수로 사이버 위협을 탐지 후 위협에 대한 속성별 자동 분류하는 플랫폼입니다.</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">한국산업기술시험원 GS인증</span>
+        <small class="date">2020.04 - 2020.08</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>디버깅 및 버그 리포트 작성</li>
+            <li>문서화 및 버그 수정</li>
+            <li>구/신 플랫폼 유지보수 수행</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">Polling 방식을 이용한 데이터 모니터링 개발</span>
+        <small class="date">2020.03</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>Observable 기반 Polling 로직 구현 (일정 주기 서버 통신 구조 설계)</li>
+            <li>RxJS forkJoin, debounce, debounceTime 활용 및 서버 과부하 방지 로직 설계</li>
+            <li>동적 시간 설정 기능 구현</li>
+            <li>최신 데이터 상단 정렬 및 Pagination 기반 테이블 구현</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">신규 플랫폼 개발 (하이투자증권)</span>
+        <small class="date">2019.12 - 2020.02</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>Angular 6 → Angular 9 재구축 (모듈 집합 구조 → 컴포넌트 단위 Module 분리 설계)</li>
+            <li>Leaflet 활용 국가별 공격 정보 시각화</li>
+            <li>탐지 결과 기반 위험도 차트 구현</li>
+            <li>커스텀 Pipe 개발 (숫자 단위를 K, M, B로 변환하는 내부 필터 구현)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">AI 데이터 시각화 플랫폼 개발</span>
+        <small class="date">2019.09 - 2019.11</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>HighChart, vis.js 기반 데이터 시각화 구현</li>
+            <li>사용자 설정 가능한 위젯 기능 개발 및 위젯/대시보드 컴포넌트 모듈화</li>
+            <li>Bar, Line, Sankey, Scatter, Pie, Sunburst, Word Cloud, HeatMap 등 다양한 차트 구현</li>
+            <li>vis.js를 활용한 AI ↔ DB ↔ Client 데이터 흐름 시각화</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">WebSocket 기반 플랫폼 공유 기능 개발</span>
+        <small class="date">2019.07 - 2019.08</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>Socket.io Client 기반 실시간 공유 기능 구현 (특정 사용자에게 현재 페이지 공유)</li>
+            <li>html2Canvas를 활용한 화면 캡처 기능 구현</li>
+            <li>공유 콘텐츠 기반 댓글(채팅) 기능 개발</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="hyde career">
+      <div class="pt50">
+        <span class="title">Angular 9 자사 플랫폼 개발</span>
+        <small class="date">2019.04 - 2019.07</small>
+        <div class="desc">
+          <div><p><strong>Work</strong></p></div>
+          <ul>
+            <li>REST API 기반 관리자 페이지 개발</li>
+            <li>NgRx Store 기반 CRUD 구조 설계 (Lodash, ag-grid 적용)</li>
+            <li>i18n 다국어 적용 작업</li>
+            <li>UI 리뉴얼 - 로그인 및 메인 화면 개선, Material → Bootstrap 4 순차 전환</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <h2>💻 Web Site</h2>
   <div class="hyde career">
     <div>
@@ -587,6 +820,7 @@
           <p><strong>Others</strong></p>
         </div>
         <ul>
+          <li><a href="https://msu.io/maplestoryn">MapleStory N</a></li>
           <li><a href="https://soldout.co.kr">Soldout</a></li>
           <li><a href="https://showa.kr">Showa</a></li>
           <li><a href="https://observablehq.com/@3sam3?type=collections">Blog</a></li>
@@ -595,7 +829,7 @@
     </div>
   </div>
 
-  <div style="border-top: 1px solid #ccc; padding-bottom: 30px;">
+  <div class="contact-section">
     <h2>📞 Contact</h2>
     <ul>
       <li>without.whipping.cream@gmail.com</li>
@@ -604,33 +838,26 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-
 <style>
-  .hyde.career strong {
-    margin: 10px 0;
-    display: block;
-  }
   .hyde.career {
-    .desc {
-      p {
-        margin: 5px 0;
-        background: #000;
-        width: min-content;
-        color: #ffff03;
-        strong {
-          padding: 0 2px;
-        }
-      }
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      margin: 10px 0;
+      display: block;
     }
-  }
-  .hyde.career {
+    span {
+      font-size: 16px;
+    }
+    ul {
+      margin-top: 5px;
+      padding-left: 20px;
+      font-size: 15px;
+    }
+    ul li {
+      margin-bottom: 5px;
+    }
     .title {
       font-weight: bold;
       font-size: 24px;
@@ -638,35 +865,40 @@
     .date {
       padding-left: 10px;
     }
-  }
-
-  .hyde.career ul {
-    margin-top: 5px;
-    padding-left: 20px;
-    font-size: 15px;
-  }
-  .hyde.career span {
-    font-size: 16px;
-  }
-  .hyde.career ul li {
-    margin-bottom: 5px;
-  }
-  .hyde.career {
     .pt50 {
       padding-top: 50px;
     }
+    .desc {
+      width: 100%;
+      p {
+        margin: 5px 0;
+        background: #000;
+        width: fit-content;
+        color: #ffff03;
+        strong {
+          padding: 0 2px;
+        }
+      }
+    }
+  }
+  .pt100 {
+    padding-top: 100px;
+  }
+  .contact-section {
+    border-top: 1px solid #ccc;
+    padding-bottom: 30px;
   }
   .img-box {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
-
   .image-container {
-    width: 33.33%;
+    flex: 0 0 calc(50% - 10px);
+    min-width: calc(50% - 10px);
     box-sizing: border-box;
     padding: 5px;
   }
-
   .image-container img {
     width: 100%;
     height: auto;
@@ -674,6 +906,7 @@
     border-radius: 6px;
   }
 </style>
+
       </div>
       
     </section>
