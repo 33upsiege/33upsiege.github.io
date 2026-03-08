@@ -2,7 +2,6 @@ import Header from './components/Header'
 import Summary from './components/Summary'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
-import Education from './components/Education'
 import PrintButton from './components/PrintButton'
 import './App.css'
 
@@ -14,7 +13,7 @@ export default function App() {
         <Summary />
         <Skills />
         <Experience />
-        <Education />
+        {/*<Education />*/}
       </main>
       <PrintButton />
     </div>
