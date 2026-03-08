@@ -1,9 +1,61 @@
-import { useState } from 'react'
-import { experiences, type Experience, type Project } from '../data/resume'
+import { useState, useEffect, useCallback } from 'react'
+import { experiences, type Experience, type Project, type ProjectImage } from '../data/resume'
 import styles from './Experience.module.css'
 
 function Tag({ label }: { label: string }) {
   return <span className={styles.tag}>{label}</span>
+}
+
+function ImageGallery({ images }: { images: ProjectImage[] }) {
+  const [index, setIndex] = useState<number | null>(null)
+
+  const prev = useCallback((e: React.MouseEvent) => {
+    e.stopPropagation()
+    setIndex(i => i === null ? null : (i - 1 + images.length) % images.length)
+  }, [images.length])
+
+  const next = useCallback((e: React.MouseEvent) => {
+    e.stopPropagation()
+    setIndex(i => i === null ? null : (i + 1) % images.length)
+  }, [images.length])
+
+  useEffect(() => {
+    if (index === null) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft')  setIndex(i => i === null ? null : (i - 1 + images.length) % images.length)
+      if (e.key === 'ArrowRight') setIndex(i => i === null ? null : (i + 1) % images.length)
+      if (e.key === 'Escape')     setIndex(null)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [index, images.length])
+
+  return (
+    <>
+      <div className={styles.gallery}>
+        {images.map((img, i) => (
+          <button key={i} className={styles.thumbBtn} onClick={() => setIndex(i)}>
+            <img src={img.thumb} alt="" className={styles.thumb} loading="lazy" />
+          </button>
+        ))}
+      </div>
+
+      {index !== null && (
+        <div className={styles.lightbox} onClick={() => setIndex(null)}>
+          <button className={styles.lightboxClose} onClick={() => setIndex(null)}>✕</button>
+          <button className={`${styles.navBtn} ${styles.navPrev}`} onClick={prev}>‹</button>
+          <img
+            src={images[index].full}
+            alt=""
+            className={styles.lightboxImg}
+            onClick={e => e.stopPropagation()}
+          />
+          <button className={`${styles.navBtn} ${styles.navNext}`} onClick={next}>›</button>
+          <span className={styles.counter}>{index + 1} / {images.length}</span>
+        </div>
+      )}
+    </>
+  )
 }
 
 function ProjectCard({ project }: { project: Project }) {
@@ -33,6 +85,9 @@ function ProjectCard({ project }: { project: Project }) {
               </li>
             ))}
           </ul>
+          {project.images && project.images.length > 0 && (
+            <ImageGallery images={project.images} />
+          )}
           {project.tags && (
             <div className={styles.tagRow}>
               {project.tags.map(t => <Tag key={t} label={t} />)}
@@ -56,9 +111,9 @@ function ExperienceCard({ exp }: { exp: Experience }) {
           <span className={styles.period}>{exp.period}</span>
           <div className={styles.badges}>
             <span className={styles.duration}>{exp.duration}</span>
-            <span className={`${styles.badge} ${exp.type === '정규직' ? styles.badgeFull : styles.badgeContract}`}>
-              {exp.type}
-            </span>
+            {/*<span className={`${styles.badge} ${exp.type === '정규직' ? styles.badgeFull : styles.badgeContract}`}>*/}
+            {/*  {exp.type}*/}
+            {/*</span>*/}
           </div>
         </div>
       </div>

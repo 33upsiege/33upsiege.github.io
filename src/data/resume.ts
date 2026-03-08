@@ -12,11 +12,17 @@ export const personalInfo = {
   ]
 }
 
+export interface ProjectImage {
+  thumb: string  // 1200px — 갤러리 썸네일
+  full: string   // 1920px — 라이트박스
+}
+
 export interface Project {
   name: string
   period: string
   highlights: string[]
   tags?: string[]
+  images?: ProjectImage[]
 }
 
 export interface Experience {
@@ -44,12 +50,17 @@ export const experiences: Experience[] = [
         highlights: [
           '백오피스 연동 동적 콘텐츠 시스템 구축 (약관 / 배너 / 공지사항 노출 조건 기반 렌더링)',
           '게시글 이모티콘 반응 시스템: SWR 캐싱 + API 호출 디바운스로 요청 최소화',
-          'NXPC 시세 실시간 반영: SSE 검토 후 Polling 채택, 조건부 요청 전략으로 서버 부하 최소화',
+          'NXPC 시세 실시간 반영: SSE 검토 후 Polling 채택, 조건부 요청으로 서버 부하 최소화',
           '인터랙션 중심 플랫폼 기능 레이어 개발 (패럴랙스 스크롤, 애니메이션, 정적 리소스 분리 · 캐싱)',
           '트레이딩 차트 라이브러리 커스터마이징 및 Git Submodule 기반 재사용 구조 설계',
           'BFF 기반 RESTful API 연동, SWR 서버 상태 + 컴포넌트 단위 로컬 상태 분리로 복잡도 최소화',
         ],
-        tags: ['Next.js', 'TypeScript', 'SWR', 'D3.js', 'GitLab CI/CD']
+        tags: ['Next.js', 'TypeScript', 'SWR', 'D3.js', 'GitLab CI/CD'],
+        images: [
+          { thumb: '/images/uv_01.jpg', full: '/images/full/uv_01.jpg' },
+          { thumb: '/images/uv_02.jpg', full: '/images/full/uv_02.jpg' },
+          { thumb: '/images/uv_03.jpg', full: '/images/full/uv_03.jpg' },
+        ]
       },
       {
         name: 'AI 기반 개발 워크플로우 도입',
@@ -67,7 +78,12 @@ export const experiences: Experience[] = [
           '오브젝트 좌우 이동 인터랙션 (애니메이션 + 입력 처리) 및 중앙 판정 영역 기반 성공/실패 로직 구현',
           '판정 결과에 따른 UI 상태 전환 및 강화 단계별 상태 관리',
         ],
-        tags: ['React', 'TypeScript', 'Animation']
+        tags: ['React', 'TypeScript', 'Animation'],
+        images: [
+          { thumb: '/images/starcatch_1.jpg', full: '/images/full/starcatch_1.jpg' },
+          { thumb: '/images/smithy_2.jpg',    full: '/images/full/smithy_2.jpg' },
+          { thumb: '/images/modal_5.jpg',     full: '/images/full/modal_5.jpg' },
+        ]
       },
       {
         name: '런칭 이벤트 · 사전예약 페이지 개발',
@@ -86,7 +102,11 @@ export const experiences: Experience[] = [
           '게임 내 아이템 강화 시도 횟수 · 사용 재화 데이터 시각화',
           'Line / Bar 차트 + Zoom In/Out 인터랙션 + 필터 기능 구현',
         ],
-        tags: ['D3.js', 'TypeScript', 'React']
+        tags: ['D3.js', 'TypeScript', 'React'],
+        images: [
+          { thumb: '/images/dp_1.jpg', full: '/images/full/dp_1.jpg' },
+          { thumb: '/images/dp_2.jpg', full: '/images/full/dp_2.jpg' },
+        ]
       },
       {
         name: 'SSR/CSR 혼합 랭킹 페이지 개발',
@@ -126,7 +146,11 @@ export const experiences: Experience[] = [
           'Nuxt 서버 미들웨어 기반 sitemap.xml 자동 생성 (Google Search Console 접근 시 자동 업데이트)',
           '이슈 해결: 대량 데이터 처리 시 브라우저 중단 → async/await 비동기 분할 처리 + 복구 로직 구현',
         ],
-        tags: ['Nuxt.js', 'SEO', 'xmlbuilder2']
+        tags: ['Nuxt.js', 'SEO', 'xmlbuilder2'],
+        images: [
+          { thumb: '/images/web_searchConsole.jpg',    full: '/images/full/web_searchConsole.jpg' },
+          { thumb: '/images/mobile_searchConsole.jpg', full: '/images/full/mobile_searchConsole.jpg' },
+        ]
       },
       {
         name: '결제 시스템 개발 및 연동',
@@ -134,7 +158,12 @@ export const experiences: Experience[] = [
         highlights: [
           '현대카드 결제 기능 추가 FE 단독 담당, 현대카드 API 연동 결제 페이지 개발 후 실서비스 배포',
         ],
-        tags: ['Vue.js', 'Payment API']
+        tags: ['Vue.js', 'Payment API'],
+        images: [
+          { thumb: '/images/hyundai_1.jpg', full: '/images/full/hyundai_1.jpg' },
+          { thumb: '/images/hyundai_2.jpg', full: '/images/full/hyundai_2.jpg' },
+          { thumb: '/images/hyundai_3.jpg', full: '/images/full/hyundai_3.jpg' },
+        ]
       },
       {
         name: '제품 검수 애플리케이션 개발 (Android Web App)',
@@ -143,7 +172,13 @@ export const experiences: Experience[] = [
           '사내 검수팀용 Android APK 기반 웹앱 — 바코드 · QR 코드 인식 및 실시간 검수 현황 대시보드 구현',
           '이슈 해결: WebRTC(getUserMedia) 갤럭시 광각 카메라 기본 선택 문제 → enumerateDevices() 활용 기기 ID 기반 카메라 설정',
         ],
-        tags: ['WebRTC', 'WebApp', 'Android']
+        tags: ['WebRTC', 'WebApp', 'Android'],
+        images: [
+          { thumb: '/images/confirm_0.jpg',       full: '/images/full/confirm_0.jpg' },
+          { thumb: '/images/confirm_1.jpg',       full: '/images/full/confirm_1.jpg' },
+          { thumb: '/images/confirm_2.jpg',       full: '/images/full/confirm_2.jpg' },
+          { thumb: '/images/confirm_barcode.jpg', full: '/images/full/confirm_barcode.jpg' },
+        ]
       },
       {
         name: 'Soldout Web 서비스 구축',
@@ -152,7 +187,12 @@ export const experiences: Experience[] = [
           '앱 전용 서비스 → 웹 서비스 확장: 초기 구조 설계 및 핵심 페이지(메인, 상품 상세, 결제 등) 구현',
           '이슈 해결: 결제 오류 reload 시 store 초기화 문제 → sessionStorage 기반 상태 유지 로직 구현',
         ],
-        tags: ['Vue.js', 'Vuex', 'SSR']
+        tags: ['Vue.js', 'Vuex', 'SSR'],
+        images: [
+          { thumb: '/images/web1_.jpg', full: '/images/full/web1_.jpg' },
+          { thumb: '/images/web2_.jpg', full: '/images/full/web2_.jpg' },
+          { thumb: '/images/web3_.jpg', full: '/images/full/web3_.jpg' },
+        ]
       },
       {
         name: 'Soldout Admin 현황판 개발',
@@ -161,7 +201,13 @@ export const experiences: Experience[] = [
           '거래 현황 · 검수 현황 · 포인트 금액 모니터링 대시보드 개발',
           'Polling 기반 실시간 데이터 업데이트 및 차트 라이브러리 활용 데이터 시각화',
         ],
-        tags: ['Vue.js', 'ApexChart', 'Polling']
+        tags: ['Vue.js', 'ApexChart', 'Polling'],
+        images: [
+          { thumb: '/images/soldout_002.jpg', full: '/images/full/soldout_002.jpg' },
+          { thumb: '/images/soldout_001.jpg', full: '/images/full/soldout_001.jpg' },
+          { thumb: '/images/soldout_003.jpg', full: '/images/full/soldout_003.jpg' },
+          { thumb: '/images/soldout_004.jpg', full: '/images/full/soldout_004.jpg' },
+        ]
       },
     ]
   },
