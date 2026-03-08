@@ -1,0 +1,22 @@
+.resume {
+  background: #fff;
+  min-height: 100vh;
+}
+
+.resume-body {
+  padding-bottom: 60px;
+}
+
+@media print {
+  @page {
+    margin: 18mm 16mm;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  .resume-body {
+    padding-bottom: 0;
+  }
+}
