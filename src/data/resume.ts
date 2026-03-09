@@ -109,14 +109,14 @@ export const experiences: Experience[] = [
         ]
       },
       {
-        name: 'SSR/CSR 혼합 랭킹 페이지 개발',
+        name: 'SPA 랭킹 페이지 개발',
         period: '2024.07 – 2024.09',
         highlights: [
-          '베타 기간 수집 유저 데이터 기반 랭킹 · 검색 페이지 개발',
-          'Next.js SSR/CSR 혼합 구조 설계 — 서버 사이드 렌더링 + 클라이언트 인터랙션 분리',
-          'vanilla-extract 기반 스타일링, 사내 공용 라이브러리 확장 및 Nexus 기반 배포',
+          '베타 기간 수집 유저 데이터 기반 랭킹, 검색 페이지 개발',
+          'SPA 구조 기반으로 페이지 설계 및 클라이언트 중심 인터랙션 구현',
+          'SCSS Module 기반 스타일링, 사내 공용 라이브러리 확장 및 Nexus 기반 배포',
         ],
-        tags: ['Next.js', 'vanilla-extract', 'Nexus', 'TypeScript']
+        tags: ['Next.js', 'SCSS Module', 'Nexus', 'TypeScript']
       },
     ]
   },
