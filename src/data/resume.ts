@@ -45,15 +45,15 @@ export const experiences: Experience[] = [
     description: 'MapleStory Universe 웹 플랫폼 개발, 고도화 및 유지보수',
     projects: [
       {
-        name: '라이브 서비스 기능 고도화 · 유지보수',
+        name: '라이브 서비스 기능 고도화 및 유지보수',
         period: '2025.08 – 2026.02',
         highlights: [
           '백오피스 연동 동적 콘텐츠 시스템 구축 (약관 / 배너 / 공지사항 노출 조건 기반 렌더링)',
           '게시글 이모티콘 반응 시스템: SWR 캐싱 + API 호출 디바운스로 요청 최소화',
           'NXPC 시세 실시간 반영: SSE 검토 후 Polling 채택, 조건부 요청으로 서버 부하 최소화',
-          '인터랙션 중심 플랫폼 기능 레이어 개발 (패럴랙스 스크롤, 애니메이션, 정적 리소스 분리 · 캐싱)',
-          '트레이딩 차트 라이브러리 커스터마이징 및 Git Submodule 기반 재사용 구조 설계',
-          'BFF 기반 RESTful API 연동, SWR 서버 상태 + 컴포넌트 단위 로컬 상태 분리로 복잡도 최소화',
+          '인터랙션 중심 플랫폼 기능 레이어 개발 (패럴랙스 스크롤, 애니메이션, 정적 리소스 분리 및 캐싱)',
+          'D3.js 차트 커스터마이징 및 Git Submodule 기반 재사용 구조 설계',
+          'BFF 기반 RESTful API 연동, SWR 서버 상태, 컴포넌트 단위 로컬 상태 분리로 복잡도 최소화',
         ],
         tags: ['Next.js', 'TypeScript', 'SWR', 'D3.js', 'GitLab CI/CD'],
         images: [
@@ -66,10 +66,10 @@ export const experiences: Experience[] = [
         name: 'AI 기반 개발 워크플로우 도입',
         period: '2025.11 – 2026.02',
         highlights: [
-          'Claude Code CLI · ChatGPT 활용 코드 리뷰 자동화 및 반복 작업 자동화로 스프린트 생산성 향상',
-          '설계 초안 검증 및 코드 개선안 비교 검토를 통한 의사결정 속도 단축',
+          'Claude Code CLI 활용 환경변수 자동화 및 반복 작업 스프린트 생산성 향상',
+          '설계 초안 검증 및 코드 개선안 비교, 검토를 통한 시간 단축 효과',
         ],
-        tags: ['Claude Code', 'ChatGPT']
+        tags: ['Claude Code']
       },
       {
         name: '아이템 강화(스타캐치) 미니게임 웹 구현',
@@ -86,7 +86,7 @@ export const experiences: Experience[] = [
         ]
       },
       {
-        name: '런칭 이벤트 · 사전예약 페이지 개발',
+        name: '런칭 이벤트 및 사전예약 페이지 개발',
         period: '2025.03 – 2025.05',
         highlights: [
           '목표 10만명 규모 사전예약 이벤트 페이지 — 대규모 트래픽 대응 구조 설계',
@@ -99,7 +99,7 @@ export const experiences: Experience[] = [
         name: 'D3.js 기반 인게임 아이템 강화 차트 구현',
         period: '2024.11 – 2024.12',
         highlights: [
-          '게임 내 아이템 강화 시도 횟수 · 사용 재화 데이터 시각화',
+          '게임 내 아이템 강화 시도 횟수, 사용 재화 데이터 시각화',
           'Line / Bar 차트 + Zoom In/Out 인터랙션 + 필터 기능 구현',
         ],
         tags: ['D3.js', 'TypeScript', 'React'],
@@ -142,7 +142,7 @@ export const experiences: Experience[] = [
         name: 'SEO 개발 (단독 진행)',
         period: '2023.08 – 2023.09',
         highlights: [
-          '모바일 웹 · PC 페이지 검색엔진 최적화 작업 단독 수행',
+          '모바일 웹, PC 페이지 검색엔진 최적화 작업 단독 수행',
           'Nuxt 서버 미들웨어 기반 sitemap.xml 자동 생성 (Google Search Console 접근 시 자동 업데이트)',
           '이슈 해결: 대량 데이터 처리 시 브라우저 중단 → async/await 비동기 분할 처리 + 복구 로직 구현',
         ],
@@ -169,7 +169,7 @@ export const experiences: Experience[] = [
         name: '제품 검수 애플리케이션 개발 (Android Web App)',
         period: '2022.03 – 2022.04',
         highlights: [
-          '사내 검수팀용 Android APK 기반 웹앱 — 바코드 · QR 코드 인식 및 실시간 검수 현황 대시보드 구현',
+          '사내 검수팀용 Android APK 기반 웹앱 — 바코드, QR 코드 인식 및 실시간 검수 현황 대시보드 구현',
           '이슈 해결: WebRTC(getUserMedia) 갤럭시 광각 카메라 기본 선택 문제 → enumerateDevices() 활용 기기 ID 기반 카메라 설정',
         ],
         tags: ['WebRTC', 'WebApp', 'Android'],
@@ -198,7 +198,7 @@ export const experiences: Experience[] = [
         name: 'Soldout Admin 현황판 개발',
         period: '2022.05 – 2022.07',
         highlights: [
-          '거래 현황 · 검수 현황 · 포인트 금액 모니터링 대시보드 개발',
+          '거래 및 검수 현황, 포인트 금액 모니터링 대시보드 개발',
           'Polling 기반 실시간 데이터 업데이트 및 차트 라이브러리 활용 데이터 시각화',
         ],
         tags: ['Vue.js', 'ApexChart', 'Polling'],
@@ -223,9 +223,9 @@ export const experiences: Experience[] = [
         name: 'Showa 백오피스 Admin 플랫폼 개발',
         period: '2020.10 – 2021.08',
         highlights: [
-          'Angular 10 + TypeScript 기반 백오피스 플랫폼 설계 및 전담 개발 (사내 패션 MD · 운영 · 마케팅 인원 대상)',
+          'Angular 10 + TypeScript 기반 백오피스 플랫폼 설계 및 전담 개발 (사내 패션 MD 운영 마케팅 인원 대상)',
           'RxJS(NgRx Store) 상태 관리, 페이지별 Module 분리, 공통 컴포넌트 Shared Module 분리 설계',
-          'MD 상품 CRUD, 공지사항 · 카테고리 매칭, Excel 업/다운로드, Drag & Drop 상품 정렬 구현',
+          'MD 상품 CRUD, 공지사항, 카테고리 매칭, Excel 업/다운로드, Drag & Drop 상품 정렬 구현',
           'Docker 기반 컨테이너 구성 및 Rancher 자동화 배포 환경 구축',
         ],
         tags: ['Angular 10', 'NgRx', 'RxJS', 'TypeScript', 'Docker']
@@ -234,7 +234,7 @@ export const experiences: Experience[] = [
         name: 'Showa.kr 소개 페이지 개발',
         period: '2021.02 – 2021.03',
         highlights: [
-          'Angular 10 · RxJS 기반 런칭 소개 페이지 개발, 공지사항 CRUD 및 DeepLink(iOS/Android 앱 연동) 구현',
+          'Angular 10, RxJS 기반 런칭 소개 페이지 개발, 공지사항 CRUD 및 DeepLink(iOS/Android 앱 연동) 구현',
         ],
         tags: ['Angular 10', 'RxJS', 'DeepLink']
       },
@@ -246,23 +246,23 @@ export const experiences: Experience[] = [
     duration: '1년 7개월',
     type: '정규직',
     role: '프론트엔드 엔지니어',
-    description: '자사 AI · 보안 솔루션 플랫폼 개발 및 유지보수',
+    description: '자사 AI 보안 솔루션 플랫폼 개발 및 유지보수',
     projects: [
       {
         name: 'AI 데이터 시각화 플랫폼 개발',
         period: '2019.09 – 2019.11',
         highlights: [
-          'HighChart 기반 사용자 설정 가능한 위젯 · 대시보드 컴포넌트 모듈화',
+          'HighChart 기반 사용자 설정 가능한 위젯, 대시보드 컴포넌트 모듈화',
           'Bar, Line, Sankey, Scatter, Pie, Sunburst, Word Cloud, HeatMap 등 다양한 차트 구현',
-          'vis.js 활용 AI ↔ DB ↔ Client 데이터 흐름 시각화',
+          'vis.js 활용 AI - DB - Client 데이터 흐름 시각화',
         ],
-        tags: ['Angular', 'HighCharts', 'vis.js', 'TypeScript']
+        tags: ['Angular', 'HighCharts', 'TypeScript']
       },
       {
         name: 'Polling 기반 데이터 모니터링 개발',
         period: '2020.03',
         highlights: [
-          'RxJS Observable 기반 Polling 로직 구현 (forkJoin · debounceTime 활용, 서버 과부하 방지 설계)',
+          'RxJS Observable 기반 Polling 로직 구현 (forkJoin, debounceTime 활용, 서버 과부하 방지 설계)',
           '동적 시간 설정 기능 및 Pagination 기반 테이블 구현',
         ],
         tags: ['Angular', 'RxJS', 'Polling']
@@ -292,8 +292,8 @@ export const skills = {
   core: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Vue.js', 'Angular'],
   state: ['SWR', 'React Query', 'Zustand', 'Vuex', 'NgRx / RxJS'],
   styling: ['Emotion', 'vanilla-extract', 'SCSS / CSS Modules', 'Tailwind CSS'],
-  visualization: ['D3.js', 'HighCharts', 'ApexChart', 'vis.js'],
-  tooling: ['Vite', 'Git / GitLab CI/CD', 'Docker', 'Figma', 'Jira', 'Nexus'],
+  visualization: ['D3.js', 'HighCharts'],
+  tooling: ['Git', 'Figma', 'Jira'],
 }
 
 export const education = {
