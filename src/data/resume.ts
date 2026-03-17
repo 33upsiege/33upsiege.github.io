@@ -2,7 +2,7 @@ export const personalInfo = {
   name: '김재형',
   phone: '010.2905.3332',
   email: 'emah@nate.com',
-  // portfolio: 'https://33upsiege.github.io',
+  portfolio: 'https://33upsiege.github.io',
   tagline: '7년차 프론트엔드 엔지니어',
   summary: [
     'Next.js 기반 대규모 플랫폼 서비스 및 이벤트 페이지 개발 경험 보유',
@@ -48,6 +48,7 @@ export const experiences: Experience[] = [
         name: '라이브 서비스 기능 고도화 및 유지보수',
         period: '2025.08 – 2026.02',
         highlights: [
+          '크로스브라우징 대응 (Chrome, Edge, Firefox, Safari) — PDF 렌더링 embed 브라우저별 동작 차이 → iframe 재작업, Safari Date 파싱 오류(YYYY-MM-DD 미지원) -> YYYY/MM/DD 포맷 변환 처리브라우저별 폰트 불일치 -> 공통 폰트 채택으로 통일',
           '백오피스 연동 동적 콘텐츠 시스템 구축 (약관 / 배너 / 공지사항 노출 조건 기반 렌더링)',
           '게시글 이모티콘 반응 시스템: SWR 캐싱 + API 호출 디바운스로 요청 최소화',
           'NXPC 시세 실시간 반영: SSE 검토 후 Polling 채택, 조건부 요청으로 서버 부하 최소화',
@@ -66,6 +67,7 @@ export const experiences: Experience[] = [
         name: 'AI 기반 개발 워크플로우 도입',
         period: '2025.11 – 2026.02',
         highlights: [
+          'GitLab 커밋 기록으로 Jira 워크로그 자동생성(Claude Code 플러그인 형태로 동작)',
           'Claude Code CLI 활용 환경변수 자동화 및 반복 작업 스프린트 생산성 향상',
           '설계 초안 검증 및 코드 개선안 비교, 검토를 통한 시간 단축 효과',
         ],
@@ -296,12 +298,6 @@ export const skills = {
   tooling: ['Git', 'Figma', 'Jira'],
 }
 
-export const education = {
-  school: '한국방송예술진흥원',
-  period: '2011.03 – 2014.02',
-  major: '방송기술',
-  status: '중퇴'
-}
 
 export const certifications = [
   {

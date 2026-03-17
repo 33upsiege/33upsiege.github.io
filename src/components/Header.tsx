@@ -18,12 +18,12 @@ export default function Header() {
             <span className={styles.icon}>✉️</span>
             <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
           </li>
-          {/*<li>*/}
-          {/*  <span className={styles.icon}>🔗</span>*/}
-          {/*  <a href={personalInfo.portfolio} target="_blank" rel="noreferrer">*/}
-          {/*    Portfolio*/}
-          {/*  </a>*/}
-          {/*</li>*/}
+          <li>
+            <span className={styles.icon}>🔗</span>
+            <a href={personalInfo.portfolio} target="_blank" rel="noreferrer">
+              https://33upsiege.github.io
+            </a>
+          </li>
         </ul>
       </div>
     </header>
