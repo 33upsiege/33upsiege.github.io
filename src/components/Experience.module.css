@@ -191,6 +191,16 @@
   margin-top: 1px;
 }
 
+.highlightSubItem {
+  padding-left: 20px;
+}
+
+.subDot {
+  flex-shrink: 0;
+  color: #94a3b8;
+  margin-top: 1px;
+}
+
 /* Image Gallery */
 .gallery {
   display: flex;

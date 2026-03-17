@@ -48,7 +48,10 @@ export const experiences: Experience[] = [
         name: '라이브 서비스 기능 고도화 및 유지보수',
         period: '2025.08 – 2026.02',
         highlights: [
-          '크로스브라우징 대응 (Chrome, Edge, Firefox, Safari) — PDF 렌더링 embed 브라우저별 동작 차이 → iframe 재작업, Safari Date 파싱 오류(YYYY-MM-DD 미지원) -> YYYY/MM/DD 포맷 변환 처리브라우저별 폰트 불일치 -> 공통 폰트 채택으로 통일',
+          '크로스브라우징 대응 (Chrome / Edge / Firefox / Safari)',
+          '· PDF embed -> iframe 전환 작업 (Safari 미지원)',
+          '· Safari Date 파싱 오류 -> YYYY/MM/DD 포맷 변환',
+          '· 폰트 불일치 -> 공통 폰트 채택',
           '백오피스 연동 동적 콘텐츠 시스템 구축 (약관 / 배너 / 공지사항 노출 조건 기반 렌더링)',
           '게시글 이모티콘 반응 시스템: SWR 캐싱 + API 호출 디바운스로 요청 최소화',
           'NXPC 시세 실시간 반영: SSE 검토 후 Polling 채택, 조건부 요청으로 서버 부하 최소화',
@@ -131,7 +134,7 @@ export const experiences: Experience[] = [
     description: '한정판 상품 정가품 검수 기반 리셀 플랫폼 FE 개발',
     projects: [
       {
-        name: 'Vue2 → React18 마이그레이션',
+        name: 'Vue2 -> React18 마이그레이션',
         period: '2023.11 – 2024.01',
         highlights: [
           '결제 및 상품 상세 페이지 포함 주요 컴포넌트 마이그레이션 (3인 협업)',
@@ -146,7 +149,7 @@ export const experiences: Experience[] = [
         highlights: [
           '모바일 웹, PC 페이지 검색엔진 최적화 작업 단독 수행',
           'Nuxt 서버 미들웨어 기반 sitemap.xml 자동 생성 (Google Search Console 접근 시 자동 업데이트)',
-          '이슈 해결: 대량 데이터 처리 시 브라우저 중단 → async/await 비동기 분할 처리 + 복구 로직 구현',
+          '이슈 해결: 대량 데이터 처리 시 브라우저 중단 -> async/await 비동기 분할 처리 + 복구 로직 구현',
         ],
         tags: ['Nuxt.js', 'SEO', 'xmlbuilder2'],
         images: [
@@ -173,7 +176,7 @@ export const experiences: Experience[] = [
         period: '2022.03 – 2022.04',
         highlights: [
           '사내 검수팀용 Android APK 기반 웹앱 — 바코드, QR 코드 인식 및 실시간 검수 현황 대시보드 구현',
-          '이슈 해결: WebRTC(getUserMedia) 갤럭시 광각 카메라 기본 선택 문제 → enumerateDevices() 활용 기기 ID 기반 카메라 설정',
+          '이슈 해결: WebRTC(getUserMedia) 갤럭시 광각 카메라 기본 선택 문제 -> enumerateDevices() 활용 기기 ID 기반 카메라 설정',
         ],
         tags: ['WebRTC', 'WebApp', 'Android'],
         images: [
@@ -187,9 +190,9 @@ export const experiences: Experience[] = [
         name: 'Soldout Web 서비스 구축',
         period: '2022.01 – 2022.03',
         highlights: [
-          '앱 전용 서비스 → 웹 서비스 확장: 초기 구조 설계 및 핵심 페이지(메인, 상품 상세, 결제 등) 구현',
+          '앱 전용 서비스 -> 웹 서비스 확장: 초기 구조 설계 및 핵심 페이지(메인, 상품 상세, 결제 등) 구현',
           '모바일 앱 웹뷰 환경을 고려한 UI 구현 및 앱-웹 간 인터페이스 연동',
-          '이슈 해결: 결제 오류 reload 시 store 초기화 문제 → sessionStorage 기반 상태 유지 로직 구현',
+          '이슈 해결: 결제 오류 reload 시 store 초기화 문제 -> sessionStorage 기반 상태 유지 로직 구현',
         ],
         tags: ['Vue.js', 'Vuex', 'SSR'],
         images: [
@@ -283,7 +286,7 @@ export const experiences: Experience[] = [
         name: '신규 플랫폼 개발 (하이투자증권)',
         period: '2019.12 – 2020.02',
         highlights: [
-          'Angular 6 → Angular 9 재구축: 모듈 집합 구조 → 컴포넌트 단위 Module 분리 설계',
+          'Angular 6 -> Angular 9 재구축: 모듈 집합 구조 -> 컴포넌트 단위 Module 분리 설계',
           'Leaflet 활용 국가별 공격 정보 시각화, 탐지 결과 기반 위험도 차트 구현',
         ],
         tags: ['Angular', 'Leaflet', 'TypeScript']

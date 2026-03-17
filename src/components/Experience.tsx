@@ -78,12 +78,18 @@ function ProjectCard({ project }: { project: Project }) {
       {open && (
         <div className={styles.projectBody}>
           <ul className={styles.highlightList}>
-            {project.highlights.map((h, i) => (
-              <li key={i} className={styles.highlightItem}>
-                <span className={styles.dash}>—</span>
-                <span>{h}</span>
-              </li>
-            ))}
+            {project.highlights.map((h, i) => {
+              const isSub = h.startsWith('·')
+              return (
+                <li key={i} className={`${styles.highlightItem} ${isSub ? styles.highlightSubItem : ''}`}>
+                  {isSub
+                    ? <span className={styles.subDot}>·</span>
+                    : <span className={styles.dash}>—</span>
+                  }
+                  <span>{isSub ? h.slice(1).trim() : h}</span>
+                </li>
+              )
+            })}
           </ul>
           {project.images && project.images.length > 0 && (
             <ImageGallery images={project.images} />
