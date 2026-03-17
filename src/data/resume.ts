@@ -8,7 +8,7 @@ export const personalInfo = {
     'Next.js 기반 대규모 플랫폼 서비스 및 이벤트 페이지 개발 경험 보유',
     '대규모 트래픽 환경에서 UI 아키텍처 설계, 상태관리 전략, 인터랙션 구현, 데이터 시각화 담당',
     'SWR 기반 서버 상태 캐싱과 API 요청 최적화를 통한 성능 개선 및 안정적 서비스 운영',
-    '플랫폼 안정성과 확장성을 고려한 구조 설계, 대규모 이벤트 트래픽 대응 성능 최적화 우선'
+    '모바일 웹뷰 연동 및 크로스브라우징 대응 경험 보유, 사용자 접점의 안정적인 서비스 운영에 집중'
   ]
 }
 
@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
         name: 'AI 기반 개발 워크플로우 도입',
         period: '2025.11 – 2026.02',
         highlights: [
-          'GitLab 커밋 기록으로 Jira 워크로그 자동생성(Claude Code 플러그인 형태로 동작)',
+          'GitLab 커밋 기록 기반 Jira 워크로그 자동 생성 도구 커스터마이징 (Claude Code hooks 활용)',
           'Claude Code CLI 활용 환경변수 자동화 및 반복 작업 스프린트 생산성 향상',
           '설계 초안 검증 및 코드 개선안 비교, 검토를 통한 시간 단축 효과',
         ],
@@ -159,6 +159,7 @@ export const experiences: Experience[] = [
         period: '2022.10 – 2022.11',
         highlights: [
           '현대카드 결제 기능 추가 FE 단독 담당, 현대카드 API 연동 결제 페이지 개발 후 실서비스 배포',
+          '카드사 결제 서비스 iframe 연동 및 결제 결과 데이터 기반 리다이렉트 처리 구현',
         ],
         tags: ['Vue.js', 'Payment API'],
         images: [
@@ -187,6 +188,7 @@ export const experiences: Experience[] = [
         period: '2022.01 – 2022.03',
         highlights: [
           '앱 전용 서비스 → 웹 서비스 확장: 초기 구조 설계 및 핵심 페이지(메인, 상품 상세, 결제 등) 구현',
+          '모바일 앱 웹뷰 환경을 고려한 UI 구현 및 앱-웹 간 인터페이스 연동',
           '이슈 해결: 결제 오류 reload 시 store 초기화 문제 → sessionStorage 기반 상태 유지 로직 구현',
         ],
         tags: ['Vue.js', 'Vuex', 'SSR'],
