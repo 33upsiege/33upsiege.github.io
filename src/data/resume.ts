@@ -37,13 +37,27 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    company: '주식회사 넥슨유니버스',
-    period: '2024.07 – 재직중',
-    duration: '1년 9개월',
+    company: '넥슨유니버스',
+    period: '2024.07 – 2026.06',
+    duration: '2년',
     type: '',
     role: '프론트엔드 엔지니어',
     description: 'MapleStory Universe 웹 플랫폼 개발, 고도화 및 유지보수',
     projects: [
+      {
+        name: '1주년 프로모션 프로젝트',
+        period: '2026.04 – 2026.06',
+        highlights: [
+          'MapleStory Universe 오픈 1주년을 기념하여 인게임 재화 사용량 기반 페이백 프로모션 웹 페이지 개발',
+          '유저 지갑 주소 기반 페이백 대상 여부 및 보상 수량 조회 기능 구현',
+          '대규모 이벤트 트래픽을 고려하여 정적 리소스 최적화 및 페이지 렌더링 비용 최소화',
+          '불필요한 API 호출을 줄이기 위해 예외 케이스 분기, 요청 조건 제어, 캐싱 전략 적용',
+          '조회 결과, 클레임 가능 여부, 제한 사유 등 서버 응답 상태에 따른 UI 분기 및 사용자 피드백 처리',
+          '데스크톱 및 모바일 환경에 대응하는 반응형 UI 구현',
+          '프로모션 페이지의 몰입감을 높이기 위한 인터랙션, 애니메이션, 시각 효과 구현',
+        ],
+        tags: ['Next.js', 'TypeScript', 'SWR', 'Responsive UI', 'Animation']
+      },
       {
         name: '라이브 서비스 기능 고도화 및 유지보수',
         period: '2025.08 – 2026.02',
@@ -68,11 +82,11 @@ export const experiences: Experience[] = [
       },
       {
         name: 'AI 기반 개발 워크플로우 도입',
-        period: '2025.11 – 2026.02',
+        period: '2025.11 – 2026.05',
         highlights: [
           'GitLab 커밋 기록 기반 Jira 워크로그 자동 생성 도구 커스터마이징 (Claude Code hooks 활용)',
           'Claude Code CLI 활용 환경변수 자동화 및 반복 작업 스프린트 생산성 향상',
-          '설계 초안 검증 및 코드 개선안 비교, 검토를 통한 시간 단축 효과',
+          'Claude Code CLI, ChatGPT 등을 활용해 코드 리뷰, 리팩토링 초안 검토, 반복 작업 자동화에 활용',
         ],
         tags: ['Claude Code']
       },
