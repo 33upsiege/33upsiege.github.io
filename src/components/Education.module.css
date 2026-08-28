@@ -58,6 +58,13 @@
   margin: 4px 0 0;
 }
 
+@media print {
+  .section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
 @media (max-width: 600px) {
   .section {
     padding: 28px 24px 0;

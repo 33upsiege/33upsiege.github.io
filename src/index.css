@@ -46,7 +46,7 @@ button {
 @media print {
   :root {
     background: #fff;
-    font-size: 11pt;
+    font-size: 10pt;
   }
 
   #root {
@@ -54,8 +54,4 @@ button {
     max-width: 100%;
   }
 
-  /* Prevent page breaks inside project cards */
-  .projectCard {
-    break-inside: avoid;
-  }
 }

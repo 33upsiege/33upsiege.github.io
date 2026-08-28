@@ -1,9 +1,10 @@
+import './App.css'
 import Header from './components/Header'
 import Summary from './components/Summary'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
 import PrintButton from './components/PrintButton'
-import './App.css'
+import Education from "./components/Education";
 
 export default function App() {
   return (
@@ -13,7 +14,7 @@ export default function App() {
         <Summary />
         <Skills />
         <Experience />
-        {/*<Education />*/}
+        <Education />
       </main>
       <PrintButton />
     </div>

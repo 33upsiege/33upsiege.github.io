@@ -166,6 +166,99 @@
   border-top: 1px solid #e2e8f0;
 }
 
+.contributionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0 0 14px;
+  overflow: hidden;
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+  background: #dbeafe;
+}
+
+.contributionGridNoTeam {
+  grid-template-columns: 1fr;
+}
+
+.contributionItem {
+  min-width: 0;
+  padding: 8px 10px;
+  background: #f8fbff;
+}
+
+.contributionItem dt,
+.troubleshootingList dt {
+  margin: 0 0 2px;
+  color: #2563eb;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.contributionItem dd {
+  margin: 0;
+  color: #334155;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.scopeItem {
+  grid-column: 1 / -1;
+}
+
+.detailBlock {
+  margin: 12px 0;
+  padding: 11px 12px;
+  border-left: 3px solid #2563eb;
+  border-radius: 0 6px 6px 0;
+  background: #f8fafc;
+}
+
+.detailTitle {
+  margin: 0 0 7px;
+  color: #1e3a8a;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.metricList {
+  margin: 0;
+  padding-left: 18px;
+  color: #334155;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.troubleshootingBlock {
+  border-left-color: #f59e0b;
+  background: #fffbeb;
+}
+
+.troubleshootingList {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0;
+}
+
+.troubleshootingList > div {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 8px;
+}
+
+.troubleshootingList dt {
+  margin: 1px 0 0;
+  color: #b45309;
+}
+
+.troubleshootingList dd {
+  margin: 0;
+  color: #3f3f46;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
 .highlightList {
   list-style: none;
   margin: 0 0 12px;
@@ -324,7 +417,75 @@
 }
 
 @media print {
+  .section {
+    break-before: page;
+    page-break-before: always;
+    padding-top: 0;
+  }
+
   .gallery, .lightbox {
+    display: none;
+  }
+
+  .sectionTitle,
+  .expHeader,
+  .expDesc,
+  .projectHeader {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .expCard {
+    break-inside: auto;
+    page-break-inside: auto;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+  }
+
+  .projectCard {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .contributionGrid,
+  .highlightItem,
+  .detailBlock,
+  .tagRow {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .projectHeader {
+    padding: 9px 12px;
+  }
+
+  .projectBody {
+    padding: 10px 12px 12px;
+  }
+
+  .highlightList {
+    gap: 5px;
+    margin-bottom: 8px;
+  }
+
+  .contributionGrid {
+    margin-bottom: 9px;
+  }
+
+  .contributionItem {
+    padding: 6px 8px;
+  }
+
+  .detailBlock {
+    margin: 8px 0;
+    padding: 8px 10px;
+  }
+
+  .tagRow {
+    margin-top: 8px;
+  }
+
+  .chevron {
     display: none;
   }
 }
@@ -355,5 +516,15 @@
   }
   .expRight {
     align-items: flex-start;
+  }
+  .contributionGrid {
+    grid-template-columns: 1fr;
+  }
+  .scopeItem {
+    grid-column: auto;
+  }
+  .troubleshootingList > div {
+    grid-template-columns: 1fr;
+    gap: 1px;
   }
 }

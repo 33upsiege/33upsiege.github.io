@@ -61,6 +61,12 @@ function ImageGallery({ images }: { images: ProjectImage[] }) {
 function ProjectCard({ project }: { project: Project }) {
   const [open, setOpen] = useState(true)
 
+  useEffect(() => {
+    const openForPrint = () => setOpen(true)
+    window.addEventListener('beforeprint', openForPrint)
+    return () => window.removeEventListener('beforeprint', openForPrint)
+  }, [])
+
   return (
     <div className={styles.projectCard}>
       <button
@@ -77,6 +83,22 @@ function ProjectCard({ project }: { project: Project }) {
 
       {open && (
         <div className={styles.projectBody}>
+          <dl className={`${styles.contributionGrid} ${!project.contribution.team ? styles.contributionGridNoTeam : ''}`}>
+            {project.contribution.team && (
+              <div className={styles.contributionItem}>
+                <dt>참여 인원</dt>
+                <dd>{project.contribution.team}</dd>
+              </div>
+            )}
+            <div className={styles.contributionItem}>
+              <dt>역할 / 기여도</dt>
+              <dd>{project.contribution.ownership}</dd>
+            </div>
+            <div className={`${styles.contributionItem} ${styles.scopeItem}`}>
+              <dt>담당 범위</dt>
+              <dd>{project.contribution.scope}</dd>
+            </div>
+          </dl>
           <ul className={styles.highlightList}>
             {project.highlights.map((h, i) => {
               const isSub = h.startsWith('·')
@@ -91,6 +113,25 @@ function ProjectCard({ project }: { project: Project }) {
               )
             })}
           </ul>
+          {project.metrics && project.metrics.length > 0 && (
+            <div className={styles.detailBlock}>
+              <h4 className={styles.detailTitle}>정량 성과</h4>
+              <ul className={styles.metricList}>
+                {project.metrics.map((metric, i) => <li key={i}>{metric}</li>)}
+              </ul>
+            </div>
+          )}
+          {project.troubleshooting && (
+            <div className={`${styles.detailBlock} ${styles.troubleshootingBlock}`}>
+              <h4 className={styles.detailTitle}>이슈 해결</h4>
+              <dl className={styles.troubleshootingList}>
+                <div><dt>문제</dt><dd>{project.troubleshooting.problem}</dd></div>
+                <div><dt>대안 검토</dt><dd>{project.troubleshooting.alternatives}</dd></div>
+                <div><dt>선택</dt><dd>{project.troubleshooting.decision}</dd></div>
+                <div><dt>결과</dt><dd>{project.troubleshooting.result}</dd></div>
+              </dl>
+            </div>
+          )}
           {project.images && project.images.length > 0 && (
             <ImageGallery images={project.images} />
           )}
