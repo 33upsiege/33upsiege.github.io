@@ -115,7 +115,7 @@ function ProjectCard({ project }: { project: Project }) {
           </ul>
           {project.metrics && project.metrics.length > 0 && (
             <div className={styles.detailBlock}>
-              <h4 className={styles.detailTitle}>정량 성과</h4>
+              <h4 className={styles.detailTitle}>성과 / 규모</h4>
               <ul className={styles.metricList}>
                 {project.metrics.map((metric, i) => <li key={i}>{metric}</li>)}
               </ul>

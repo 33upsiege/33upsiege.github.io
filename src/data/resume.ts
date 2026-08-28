@@ -84,14 +84,14 @@ export const experiences: Experience[] = [
         period: '2025.08 – 2026.02',
         contribution: {
           team: '1명 (FE 1)',
-          ownership: '단독 진행',
+          ownership: '프론트엔드 단독 담당',
           scope: '크로스브라우징, 동적 콘텐츠, NXPC 시세, 데이터 시각화 및 서버 상태 관리'
         },
         highlights: [
           '크로스브라우징 대응 (Chrome / Edge / Firefox / Safari)',
-          '· PDF embed -> iframe 전환 작업 (Safari 미지원)',
-          '· Safari Date 파싱 오류 -> YYYY/MM/DD 포맷 변환',
-          '· 폰트 불일치 -> 공통 폰트 채택',
+          '· PDF embed → iframe 전환 작업 (Safari 미지원)',
+          '· Safari Date 파싱 오류 → YYYY/MM/DD 포맷 변환',
+          '· 폰트 불일치 → 공통 폰트 채택',
           '백오피스 연동 동적 콘텐츠 시스템 구축 (약관 / 배너 / 공지사항 노출 조건 기반 렌더링)',
           '게시글 이모티콘 반응 시스템: SWR 캐싱 + API 호출 디바운스로 요청 최소화',
           'NXPC 시세 실시간 반영: SSE 검토 후 Polling 채택, 조건부 요청으로 서버 부하 최소화',
@@ -107,8 +107,8 @@ export const experiences: Experience[] = [
         troubleshooting: {
           problem: 'NXPC 시세를 WebSocket으로 실시간 제공했으나, 서비스 오픈 직후 트래픽이 집중되면서 다른 API 응답까지 지연되고 일부 브라우저가 멈추는 장애가 발생해 즉시 핫픽스가 필요',
           alternatives: '단방향 시세 스트림에 적합하고 연결 관리 비용이 낮은 SSE 전환을 백엔드에 제안했지만 백엔드 인력, 대응 시간, 신규 스트리밍 API 개발, 검증 범위를 고려하면 긴급 배포 일정 내 적용하기 어렵다고 판단',
-          decision: '이미 운영 중인 시세 조회 API를 활용한 Polling으로 전환하고 화면 비활성화, 탭 미노출 시 요청을 중단하고, 중복 요청 방지와 갱신 주기 제어를 적용해 트래픽 증가 핸들링(억제)',
-          result: '신규 백엔드 개발 없이 긴급 배포를 완료했으며 브라우저 멈춤과 타 API 응답 지연을 해소했다. 실시간성은 내부 서비스 허용 범위의 갱신주기(60초) 로 유지'
+          decision: '기존 시세 조회 API를 활용한 Polling으로 전환했다. 화면이 비활성 상태이거나 탭이 노출되지 않을 때 요청을 중단하고, 중복 요청 방지와 60초 갱신 주기를 적용해 불필요한 요청량을 억제했다.',
+          result: '신규 백엔드 개발 없이 핫픽스를 배포해 브라우저 멈춤과 타 API 응답 지연을 해소했다. 시세 최신성은 서비스 허용 범위인 60초로 유지했다.'
         },
         tags: ['Next.js', 'TypeScript', 'SWR', 'D3.js', 'GitLab CI/CD'],
         images: [
@@ -127,7 +127,7 @@ export const experiences: Experience[] = [
         },
         highlights: [
           'GitLab 커밋 기록 기반 Jira 워크로그 자동 생성 도구 커스터마이징 (Claude Code hooks 활용)',
-          'Claude Code CLI 활용 환경변수 자동화 및 반복 작업 스프린트 생산성 향상',
+          'Claude Code CLI를 활용한 환경 변수 설정 및 반복 작업 자동화로 스프린트 생산성 향상',
           'Claude Code CLI, ChatGPT 등을 활용해 코드 리뷰, 리팩토링 초안 검토, 반복 작업 자동화에 활용',
         ],
         metrics: [
@@ -141,7 +141,7 @@ export const experiences: Experience[] = [
         period: '2025.06 – 2025.07',
         contribution: {
           team: '1명 (FE 1)',
-          ownership: '단독 진행',
+          ownership: '프론트엔드 단독 담당',
           scope: '게임 인터랙션, 입력, 판정 로직, 단계별 상태 및 결과 UI 구현'
         },
         highlights: [
@@ -160,11 +160,11 @@ export const experiences: Experience[] = [
         period: '2025.03 – 2025.05',
         contribution: {
           team: '4명 (FE 1 · BE 1 · 디자인 1 · 기획 1)',
-          ownership: 'FE 단독 진행',
+          ownership: '프론트엔드 단독 담당',
           scope: '이벤트 페이지 구조 설계, API 연동, 캐싱·예외 처리 및 사용자 피드백 구현'
         },
         highlights: [
-          '목표 10만명 규모 사전예약 이벤트 페이지 — 대규모 트래픽 대응 구조 설계',
+          '목표 10만 명 규모 사전예약 이벤트 페이지 — 대규모 트래픽 대응 구조 설계',
           'SWR 캐싱 전략 + 정적 리소스 분리 + API 디바운스 적용으로 네트워크 요청 최소화',
           '예외 처리 및 사용자 피드백 로직 전체 구현',
         ],
@@ -201,7 +201,7 @@ export const experiences: Experience[] = [
         period: '2024.07 – 2024.09',
         contribution: {
           team: '4명 (FE 1 · BE 1 · 디자인 1 · 기획 1)',
-          ownership: 'FE 단독 진행',
+          ownership: '프론트엔드 단독 담당',
           scope: 'SPA 구조, 랭킹, 검색 UI, 공용 라이브러리 확장 및 배포'
         },
         highlights: [
@@ -222,7 +222,7 @@ export const experiences: Experience[] = [
     description: '한정판 상품 정가품 검수 기반 리셀 플랫폼 FE 개발',
     projects: [
       {
-        name: 'Vue2 -> React18 마이그레이션',
+        name: 'Vue2 → React18 마이그레이션',
         period: '2023.11 – 2024.01',
         contribution: {
           team: '3명 (FE 3)',
@@ -254,7 +254,7 @@ export const experiences: Experience[] = [
         highlights: [
           '모바일 웹, PC 페이지 검색엔진 최적화 작업 단독 수행',
           'Nuxt 서버 미들웨어 기반 sitemap.xml 자동 생성 (Google Search Console 접근 시 자동 업데이트)',
-          '이슈 해결: 대량 데이터 처리 시 브라우저 중단 -> async/await 비동기 분할 처리 + 복구 로직 구현',
+          '이슈 해결: 대량 URL 처리 시 브라우저 중단 → 처리 단위 분할과 비동기 순차 실행, 실패 구간 복구 로직으로 해결',
         ],
         metrics: [
           'PC·모바일 2개 채널의 전체 공개 페이지 sitemap 생성·갱신 자동화',
@@ -271,7 +271,7 @@ export const experiences: Experience[] = [
         period: '2022.10 – 2022.11',
         contribution: {
           team: '4명 (FE 1 · BE 1 · 디자인 1 · 기획 1)',
-          ownership: 'FE 단독 진행',
+          ownership: '프론트엔드 단독 담당',
           scope: '현대카드 API·iframe 연동, 결제 결과 처리, 리다이렉트 및 실서비스 배포'
         },
         highlights: [
@@ -283,6 +283,26 @@ export const experiences: Experience[] = [
           { thumb: '/images/hyundai_1.jpg', full: '/images/full/hyundai_1.jpg' },
           { thumb: '/images/hyundai_2.jpg', full: '/images/full/hyundai_2.jpg' },
           { thumb: '/images/hyundai_3.jpg', full: '/images/full/hyundai_3.jpg' },
+        ]
+      },
+      {
+        name: 'Soldout Admin 현황판 개발',
+        period: '2022.05 – 2022.07',
+        contribution: {
+          team: '3명 (FE 1 · BE 1 · 기획 1)',
+          ownership: '관리자 대시보드 프론트엔드 단독 담당',
+          scope: '거래, 검수, 포인트 등 시각화, Polling 갱신, 차트 기반 모니터링 UI 구현'
+        },
+        highlights: [
+          '거래 및 검수 현황, 포인트 금액 모니터링 대시보드 개발',
+          'Polling 기반 실시간 데이터 업데이트 및 차트 라이브러리 활용 데이터 시각화',
+        ],
+        tags: ['Vue.js', 'ApexCharts', 'Polling'],
+        images: [
+          { thumb: '/images/soldout_002.jpg', full: '/images/full/soldout_002.jpg' },
+          { thumb: '/images/soldout_001.jpg', full: '/images/full/soldout_001.jpg' },
+          { thumb: '/images/soldout_003.jpg', full: '/images/full/soldout_003.jpg' },
+          { thumb: '/images/soldout_004.jpg', full: '/images/full/soldout_004.jpg' },
         ]
       },
       {
@@ -323,13 +343,13 @@ export const experiences: Experience[] = [
         contribution: {
           team: '5명 (FE 2 · BE 1 · 디자인 1 · 기획 1)',
           ownership: '메인·상품 상세·결제 페이지 프론트엔드 전담',
-          scope: '웹 초기 구조, 메인, 상품 상세, 결제, 앱 웹뷰 인터페이스 및 상태 복구 구현'
+          scope: '웹 초기 구조, 메인, 상품 상세, 결제, 앱 WebView 인터페이스 및 상태 복구 구현'
         },
         highlights: [
           '앱 전용 서비스를 웹으로 확장하는 프로젝트에서 메인·상품 상세·결제 페이지 프론트엔드 전담',
           '상품 탐색부터 상세 조회와 결제로 이어지는 핵심 구매 여정 구현',
           '모바일 앱 WebView 환경을 고려한 반응형 UI와 앱-웹 인터페이스 연동',
-          '결제 오류 후 reload 시 Vuex Store가 초기화되는 문제를 sessionStorage 기반상태 복구 로직으로 해결'
+          '결제 오류 후 reload 시 Vuex Store가 초기화되는 문제를 sessionStorage 기반 상태 복구 로직으로 해결'
         ],
         metrics: [
           '메인·상품 상세·결제 3개 핵심 페이지를 웹으로 확장해 구매 여정 전 구간 구현',
@@ -340,26 +360,6 @@ export const experiences: Experience[] = [
           { thumb: '/images/web1_.jpg', full: '/images/full/web1_.jpg' },
           { thumb: '/images/web2_.jpg', full: '/images/full/web2_.jpg' },
           { thumb: '/images/web3_.jpg', full: '/images/full/web3_.jpg' },
-        ]
-      },
-      {
-        name: 'Soldout Admin 현황판 개발',
-        period: '2022.05 – 2022.07',
-        contribution: {
-          team: '3명 (FE 1 · BE 1 · 기획 1)',
-          ownership: '관리자 대시보드 프론트엔드 단독 담당',
-          scope: '거래, 검수, 포인트 등 시각화, Polling 갱신, 차트 기반 모니터링 UI 구현'
-        },
-        highlights: [
-          '거래 및 검수 현황, 포인트 금액 모니터링 대시보드 개발',
-          'Polling 기반 실시간 데이터 업데이트 및 차트 라이브러리 활용 데이터 시각화',
-        ],
-        tags: ['Vue.js', 'ApexChart', 'Polling'],
-        images: [
-          { thumb: '/images/soldout_002.jpg', full: '/images/full/soldout_002.jpg' },
-          { thumb: '/images/soldout_001.jpg', full: '/images/full/soldout_001.jpg' },
-          { thumb: '/images/soldout_003.jpg', full: '/images/full/soldout_003.jpg' },
-          { thumb: '/images/soldout_004.jpg', full: '/images/full/soldout_004.jpg' },
         ]
       },
     ]
@@ -421,14 +421,14 @@ export const experiences: Experience[] = [
           scope: '차트·위젯 모듈 설계, 사용자 대시보드 및 데이터 흐름 시각화 구현'
         },
         highlights: [
-          'HighChart 기반 사용자 설정 가능한 위젯, 대시보드 컴포넌트 모듈화',
+          'Highcharts 기반 사용자 설정 가능한 위젯, 대시보드 컴포넌트 모듈화',
           'Bar, Line, Sankey, Scatter, Pie, Sunburst, Word Cloud, HeatMap 등 다양한 차트 구현',
           'vis.js 활용 AI - DB - Client 데이터 흐름 시각화',
         ],
         metrics: [
           'Bar·Line·Sankey·Scatter·Pie·Sunburst·Word Cloud·HeatMap 등 8종 이상의 차트를 공통 위젯으로 모듈화'
         ],
-        tags: ['Angular', 'HighCharts', 'TypeScript']
+        tags: ['Angular', 'Highcharts', 'TypeScript']
       },
       {
         name: 'Polling 기반 데이터 모니터링 개발',
@@ -451,9 +451,9 @@ export const experiences: Experience[] = [
           scope: '실시간 공유·댓글, 화면 캡처 및 Socket.io 이벤트 연동'
         },
         highlights: [
-          'Socket.io 기반 실시간 페이지 공유, html2Canvas 화면 캡처, 공유 콘텐츠 기반 댓글(채팅) 기능 개발',
+          'Socket.io 기반 실시간 페이지 공유, html2canvas 화면 캡처, 공유 콘텐츠 기반 댓글(채팅) 기능 개발',
         ],
-        tags: ['Socket.io', 'WebSocket', 'html2Canvas']
+        tags: ['Socket.io', 'WebSocket', 'html2canvas']
       },
       {
         name: '신규 플랫폼 개발 (하이투자증권)',
@@ -463,7 +463,7 @@ export const experiences: Experience[] = [
           scope: 'Angular 재구축, 컴포넌트 모듈 설계, 지도·위험도 데이터 시각화'
         },
         highlights: [
-          'Angular 6 -> Angular 9 재구축: 모듈 집합 구조 -> 컴포넌트 단위 Module 분리 설계',
+          'Angular 6 → Angular 9 재구축: 모듈 집합 구조 → 컴포넌트 단위 Module 분리 설계',
           'Leaflet 활용 국가별 공격 정보 시각화, 탐지 결과 기반 위험도 차트 구현',
         ],
         tags: ['Angular', 'Leaflet', 'TypeScript']
@@ -476,7 +476,7 @@ export const skills = {
   core: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Vue.js', 'Angular'],
   state: ['SWR', 'React Query', 'Zustand', 'Vuex', 'NgRx / RxJS'],
   styling: ['Emotion', 'vanilla-extract', 'SCSS / CSS Modules', 'Tailwind CSS'],
-  visualization: ['D3.js', 'HighCharts'],
+  visualization: ['D3.js', 'Highcharts'],
   tooling: ['Git', 'Figma', 'Jira'],
 }
 
