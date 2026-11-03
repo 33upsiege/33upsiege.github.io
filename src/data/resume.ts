@@ -219,7 +219,7 @@ export const experiences: Experience[] = [
     duration: '2년 9개월',
     // type: '정규직',
     role: '프론트엔드 엔지니어',
-    description: '한정판 상품 정가품 검수 기반 리셀 플랫폼 FE 개발',
+    description: 'Vue 3 Composition API, Nuxt 3 기반 리셀 플랫폼 개발 및 Vue 2 화면의 React 18 마이그레이션',
     projects: [
       {
         name: 'Vue2 → React18 마이그레이션',
@@ -249,18 +249,18 @@ export const experiences: Experience[] = [
         contribution: {
           team: '2명 (FE 1 · BE 1)',
           ownership: '기획 협의 및 프론트엔드 단독 담당',
-          scope: 'PC·모바일 SEO 진단, sitemap 자동화, 대량 데이터 처리 및 장애 복구'
+          scope: 'PC, 모바일 SEO 진단, sitemap 자동화, 대량 데이터 처리 및 장애 복구'
         },
         highlights: [
           '모바일 웹, PC 페이지 검색엔진 최적화 작업 단독 수행',
-          'Nuxt 서버 미들웨어 기반 sitemap.xml 자동 생성 (Google Search Console 접근 시 자동 업데이트)',
+          'Nuxt 3 서버 미들웨어 기반 sitemap.xml 자동 생성 (Google Search Console 접근 시 자동 업데이트)',
           '이슈 해결: 대량 URL 처리 시 브라우저 중단 → 처리 단위 분할과 비동기 순차 실행, 실패 구간 복구 로직으로 해결',
         ],
         metrics: [
-          'PC·모바일 2개 채널의 전체 공개 페이지 sitemap 생성·갱신 자동화',
+          'PC, 모바일 2개 채널의 전체 공개 페이지 sitemap 생성·갱신 자동화',
           '대량 URL 처리 중 발생하던 브라우저 중단을 해소하고 실패 구간 재처리 구조 확보'
         ],
-        tags: ['Nuxt.js', 'SEO', 'xmlbuilder2'],
+        tags: ['Nuxt 3', 'Vue 3', 'Composition API', 'SEO', 'xmlbuilder2'],
         images: [
           { thumb: '/images/web_searchConsole.jpg',    full: '/images/full/web_searchConsole.jpg' },
           { thumb: '/images/mobile_searchConsole.jpg', full: '/images/full/mobile_searchConsole.jpg' },
@@ -272,13 +272,13 @@ export const experiences: Experience[] = [
         contribution: {
           team: '4명 (FE 1 · BE 1 · 디자인 1 · 기획 1)',
           ownership: '프론트엔드 단독 담당',
-          scope: '현대카드 API·iframe 연동, 결제 결과 처리, 리다이렉트 및 실서비스 배포'
+          scope: '현대카드 API, iframe 연동, 결제 결과 처리, 리다이렉트 및 실서비스 배포'
         },
         highlights: [
           '현대카드 결제 기능 추가 FE 단독 담당, 현대카드 API 연동 결제 페이지 개발 후 실서비스 배포',
           '카드사 결제 서비스 iframe 연동 및 결제 결과 데이터 기반 리다이렉트 처리 구현',
         ],
-        tags: ['Vue.js', 'Payment API'],
+        tags: ['Vue 3', 'Composition API', 'Payment API'],
         images: [
           { thumb: '/images/hyundai_1.jpg', full: '/images/full/hyundai_1.jpg' },
           { thumb: '/images/hyundai_2.jpg', full: '/images/full/hyundai_2.jpg' },
@@ -297,7 +297,7 @@ export const experiences: Experience[] = [
           '거래 및 검수 현황, 포인트 금액 모니터링 대시보드 개발',
           'Polling 기반 실시간 데이터 업데이트 및 차트 라이브러리 활용 데이터 시각화',
         ],
-        tags: ['Vue.js', 'ApexCharts', 'Polling'],
+        tags: ['Vue 3', 'Composition API', 'ApexCharts', 'Polling'],
         images: [
           { thumb: '/images/soldout_002.jpg', full: '/images/full/soldout_002.jpg' },
           { thumb: '/images/soldout_001.jpg', full: '/images/full/soldout_001.jpg' },
@@ -329,7 +329,7 @@ export const experiences: Experience[] = [
           decision: 'enumerateDevices()로 사용 가능한 카메라 목록을 조회하고 기기 ID를 기준으로 적절한 후면 카메라를 선택하도록 구현',
           result: '갤럭시 단말의 광각 카메라 오선택 문제를 해소하고 바코드·QR 인식 동작을 안정화'
         },
-        tags: ['WebRTC', 'WebView', 'Android'],
+        tags: ['Vue 3', 'Composition API', 'WebRTC', 'WebView', 'Android'],
         images: [
           { thumb: '/images/confirm_0.jpg',       full: '/images/full/confirm_0.jpg' },
           { thumb: '/images/confirm_1.jpg',       full: '/images/full/confirm_1.jpg' },
@@ -347,7 +347,7 @@ export const experiences: Experience[] = [
         },
         highlights: [
           '앱 전용 서비스를 웹으로 확장하는 프로젝트에서 메인·상품 상세·결제 페이지 프론트엔드 전담',
-          '상품 탐색부터 상세 조회와 결제로 이어지는 핵심 구매 여정 구현',
+          'Vue 3 Composition API로 메인·상품 상세·결제 화면을 구현하고 핵심 구매 여정 구성',
           '모바일 앱 WebView 환경을 고려한 반응형 UI와 앱-웹 인터페이스 연동',
           '결제 오류 후 reload 시 Vuex Store가 초기화되는 문제를 sessionStorage 기반 상태 복구 로직으로 해결'
         ],
@@ -355,7 +355,7 @@ export const experiences: Experience[] = [
           '메인·상품 상세·결제 3개 핵심 페이지를 웹으로 확장해 구매 여정 전 구간 구현',
           '결제 오류 후 새로고침 시 상태 유실로 인한 재입력 사례를 해소'
         ],
-        tags: ['Vue.js', 'Vuex', 'SSR'],
+        tags: ['Vue 3', 'Composition API', 'Vuex', 'SSR'],
         images: [
           { thumb: '/images/web1_.jpg', full: '/images/full/web1_.jpg' },
           { thumb: '/images/web2_.jpg', full: '/images/full/web2_.jpg' },
@@ -473,7 +473,7 @@ export const experiences: Experience[] = [
 ]
 
 export const skills = {
-  core: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Vue.js', 'Angular'],
+  core: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Vue 3', 'Nuxt 3', 'Angular'],
   state: ['SWR', 'React Query', 'Zustand', 'Vuex', 'NgRx / RxJS'],
   styling: ['Emotion', 'vanilla-extract', 'SCSS / CSS Modules', 'Tailwind CSS'],
   visualization: ['D3.js', 'Highcharts'],
